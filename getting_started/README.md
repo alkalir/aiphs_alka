@@ -15,15 +15,15 @@ Follow these steps as getting started:
 - Open a terminal inside it and set the Vivado 2017.4 environment variables by sourcing the settings64.sh script inside the Vivado installation folder.
 - Go in the folder, using terminal, where there is the project associated with the Digilent Nexys4 DDR board. The folder is designs/leon3-digilent-nexys4ddr.
 - Type make clean && make distclean to clean the folder metadata.
-- Copy the files...
+- Copy the files TOBEADDED
 - Type make xconfig to configure the system based on Leon3.
-- Type make vivado to launch the synthesis: it will take around 20 minutes, depending on system configuration.
+- Type make vivado to launch the synthesis: it will take around 20 minutes to complete, depending on system configuration.
 - Connect the board to the computer, set the jumper configuration for JTAG programming and power-on.
 - Type make vivado-prog-fpga to download the generated bitstream, containing the hardware, to the FPGA. This will connect the FPGA components as set in your configuration.
 - Download the bare-metal cross-compiler (BCC) for Leon3 processor from the following link: https://www.gaisler.com/anonftp/bcc2/bin/ 
 - Extract it within /opt folder of your Ubuntu system.
 - Having the Eclipse C/C++ installed in your PC, set the environment to cross-compile Leon3 applications following the instructions at the following link: https://www.gaisler.com/eclipse/qsg_sw_ide.pdf 
-- Cross-compile the application contained within ....
+- Cross-compile the application contained within TOBEADDED
 - Download the GRMON debugger (evaluation versione) for connecting to the target at the following link: https://www.gaisler.com/index.php/downloads/debug-tools
 - Extract it within the /opt folder and add the GRMON executable to the PATH of your Ubuntu system.
 - Launch GRMON and connect to the target with the command "grmon -digilent".
