@@ -1,6 +1,22 @@
-# AdaptIve Profiling Hw Sub-system (AIPHS)
+# Getting started with AIPHS on Leon3 based targets
 
 ## Overview
+This getting started will allow to use the AIPHS generated monitoring systems on a Leon3 based target, physically implemented on FPGA, obtaining a working prototype on real silicon.
+
+We selected a Leon3 processor based target since is a soft-processor (i.e., that can be customized in its hardware configuration) for which the RTL code is available under a permissive open-source license. Information about the processor can be downloaded at the following link: https://www.gaisler.com/index.php/downloads/leongrlib. Over this benefit, there is the fact that it is provided within a library, called GRLIB, where there are projects that target different existing development FPGA boards, allowing a rapid prototyping on real silicon.
+So we here consider an FPGA implementation as getting started.
+
+As FPGA target, we consider a Xilinx Artix-7 FPGA (https://www.xilinx.com/products/silicon-devices/fpga/artix-7.html), soldered on a low-cost Digilent Nexys4 DDR development board (https://store.digilentinc.com/nexys-4-ddr-artix-7-fpga-trainer-board-recommended-for-ece-curriculum/).
+
+These choices are not limiting, since the same flow can be applied also on other processors, with their synthesis tools.
+
+Follow these steps as getting started:
+- Download the GRLIB library at the following link (https://www.gaisler.com/products/grlib/grlib-gpl-2019.4-b4246.tar.gz) and extract its content on your Ubuntu Desktop.
+- Open a terminal inside it and set the Vivado 2017.4 environment variables by sourcing the settings64.sh script inside the Vivado installation folder.
+- Open the folder where there is the project associated with within designs/
+
+
+
 AIPHS, acronym of Adaptive Profiling HW Sub-system, is basically conceived to support designers on the development of On-Chip Monitoring Systems (OCMSs) able to satisfy given Monitorability Requirements, namely requirements about possibility to observe the behaviour of a system with the goal of collecting metrics (e.g., related to execution time). It is a flexible framework that targets both SoCs implemented on Field Programmable Gate Arrays (FPGAs) and on Integrated Circuits integrating some reconfigurable logics.
 AIPHS is a library of elements that, starting from some monitorability requirements and a description of the architecture, automatically offers a monitoring system that performs required measurements.
 
