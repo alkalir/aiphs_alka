@@ -47,15 +47,15 @@ Latest Release: 1.0.2
 email: giacomo.valente@univaq.it 
 
 ## Getting started guidelines
-For getting started, we provide some guidelines in the folder "guidelines".
-
-## EXAMPLES
-TBD
+For getting started, we provide some guidelines in the folder "getting_started". There is an example based on Leon3 hardware platform: AIPHS will monitor the execution of a bare-metal application running on the processor.
 
 ## FOLDERS
 
+getting_started
+- Instruction for getting started with an example of monitoring of bare-metal applications running on Leon3 processor.
+
 aiphs
-- VHDL source files related to monitoring system
+- VHDL source files related to a hardware monitoring system for Leon3 processor, used in the getting_started.
 
 parsing: python source files related to parsing activity toward CTF format.
 - dev folder contains files related to development activities.
