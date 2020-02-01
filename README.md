@@ -47,7 +47,7 @@ Latest Release: 1.0.2
 email: giacomo.valente@univaq.it 
 
 ## Getting started guidelines
-For getting started, we provide some guidelines 
+For getting started, we provide some guidelines in the folder "guidelines".
 
 ## EXAMPLES
 TBD
