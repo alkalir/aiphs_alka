@@ -8,72 +8,27 @@ So we here consider an FPGA implementation as getting started.
 
 As FPGA target, we consider a Xilinx Artix-7 FPGA (https://www.xilinx.com/products/silicon-devices/fpga/artix-7.html), soldered on a low-cost Digilent Nexys4 DDR development board (https://store.digilentinc.com/nexys-4-ddr-artix-7-fpga-trainer-board-recommended-for-ece-curriculum/).
 
-These choices are not limiting, since the same flow can be applied also on other processors, with their synthesis tools.
+These choices are not limiting, since the same flow can be applied also to other processors, with their synthesis tools.
 
 Follow these steps as getting started:
 - Download the GRLIB library at the following link (https://www.gaisler.com/products/grlib/grlib-gpl-2019.4-b4246.tar.gz) and extract its content on your Ubuntu Desktop.
 - Open a terminal inside it and set the Vivado 2017.4 environment variables by sourcing the settings64.sh script inside the Vivado installation folder.
-- Open the folder where there is the project associated with within designs/
+- Go in the folder, using terminal, where there is the project associated with the Digilent Nexys4 DDR board. The folder is designs/leon3-digilent-nexys4ddr.
+- Type make clean && make distclean to clean the folder metadata.
+- Copy the files...
+- Type make xconfig to configure the system based on Leon3.
+- Type make vivado to launch the synthesis: it will take around 20 minutes, depending on system configuration.
+- Connect the board to the computer, set the jumper configuration for JTAG programming and power-on.
+- Type make vivado-prog-fpga to download the generated bitstream, containing the hardware, to the FPGA. This will connect the FPGA components as set in your configuration.
+- Download the bare-metal cross-compiler (BCC) for Leon3 processor from the following link: https://www.gaisler.com/anonftp/bcc2/bin/ 
+- Extract it within /opt folder of your Ubuntu system.
+- Having the Eclipse C/C++ installed in your PC, set the environment to cross-compile Leon3 applications following the instructions at the following link: https://www.gaisler.com/eclipse/qsg_sw_ide.pdf 
+- Cross-compile the application contained within ....
+- Download the GRMON debugger (evaluation versione) for connecting to the target at the following link: https://www.gaisler.com/index.php/downloads/debug-tools
+- Extract it within the /opt folder and add the GRMON executable to the PATH of your Ubuntu system.
+- Launch GRMON and connect to the target with the command "grmon -digilent".
+- When connected, download the executable within the target memory using the command "load name_executable.elf".
+- Open a terminal emulator from your PC and connect to the board, setting the baudrate at 38400 bpd. 
+- Execute the application using the command "run": you will obtain ID and execution time printed on the UART output, collected by the monitoring system.
 
-
-
-AIPHS, acronym of Adaptive Profiling HW Sub-system, is basically conceived to support designers on the development of On-Chip Monitoring Systems (OCMSs) able to satisfy given Monitorability Requirements, namely requirements about possibility to observe the behaviour of a system with the goal of collecting metrics (e.g., related to execution time). It is a flexible framework that targets both SoCs implemented on Field Programmable Gate Arrays (FPGAs) and on Integrated Circuits integrating some reconfigurable logics.
-AIPHS is a library of elements that, starting from some monitorability requirements and a description of the architecture, automatically offers a monitoring system that performs required measurements.
-
-There are different planned steps related to AIPHS development in the context of MegaMart2 project, listed in the following:
-- baseline/initial version
-	- Distributed hardware monitoring system for targets implemented on FPGAs;
-	- Run-time generation of logs for WCET analysis;
-	- Runtime generation of logs for performance measurements on targets with multi-core processors, running bare-metal and Linux based applications;
-- intermediate version
-	- Generalization of the concept among monitoring infrastructures by defining a general reference architecture that can be adapted to different applications;
-- final version
-	- Development of a methodology to suggest the best monitoring mechanisms to be used in a given system, depending on data of interest and constraints to be satisfied;
-
-The current development activities provide features related to final version, still work-in-progress. In particular:
-- AIPHS is able to monitor hardware targets for which the Register-Transfer-Level source code is available. The current supported processor is the Leon3 soft-core, available at the Cobham Gaisler website (https://www.gaisler.com/index.php/downloads/leongrlib).
-- The monitoring systems can be strongly customized acting directly on VHDL code. There is an example adaptation to provide logs for WCET analysis with Rapitime tool (https://www.rapitasystems.com/products/rapitime).
-- The monitoring system can monitor both bare-metal application and Linux-based ones.
-- The monitoring system can be controlled both by bare-metal applications and Linux-based ones.
-
-## Installation Instructions
-In order to install the monitoring system, the following actions can be performed:
-- to obtain the RTL source code of the hardware system to be monitored;
-- to import the source code indicated above in a synthesis tool;
-- to clone this repository;
-- to copy and paste the VHDL source files into the project folder containing the RTL description of the system under monitoring, within the synthesis tool;
-- to customize and to connect the top-level entity of the monitoring system to the following two parts:
-	- the first part to be connected to interconnections to be monitored;
-	- the second part to be connected to control signals that will control/collect results from the monitoring system;
-- to implement the system using the synthesis tool;
-- to write programs that control/collect results from the monitoring system using provided APIs.
-
-## DOWNLOAD
-Official Git repository: https://github.com/alkalir/aiphs_alka.git
-
-## SYSTEM REQUIREMENTS
-System requirements depend on the type of hardware target used. For example:
-- for using Xilinx FPGAs, use Xilinx ISE Design suite or Xilinx Vivado Design Suite software;
-- for using Intel FPGAs, use Intel Quartus II software.
-
-## RELEASE NOTES
-Latest Release: 1.0.2
-
-## SUPPORT
-email: giacomo.valente@univaq.it 
-
-## Getting started guidelines
-For getting started, we provide some guidelines in the folder "guidelines".
-
-## EXAMPLES
-TBD
-
-## FOLDERS
-
-aiphs
-- VHDL source files related to monitoring system
-
-parsing: python source files related to parsing activity toward CTF format.
-- dev folder contains files related to development activities.
-- aiphs.py is the file that, starting from a log file composed of ID and timestamps, converts it in a trace following CTF format.
 
