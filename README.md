@@ -1,24 +1,12 @@
 # AdaptIve Profiling Hw Sub-system (AIPHS)
 
 ## Overview
-AIPHS, acronym of Adaptive Profiling HW Sub-system, is basically conceived to support designers on the development of On-Chip Monitoring Systems (OCMSs) able to satisfy given Monitorability Requirements, namely requirements about possibility to observe the behaviour of a system with the goal of collecting metrics (e.g., related to execution time). It is a flexible framework that targets both SoCs implemented on Field Programmable Gate Arrays (FPGAs) and on Integrated Circuits integrating some reconfigurable logics.
+AIPHS, acronym of Adaptive Profiling HW Sub-system, is developed in the context of Megamart2 project and it is basically conceived to support designers on the development of On-Chip Monitoring Systems (OCMSs) able to satisfy given Monitorability Requirements. These type of requirements are related to the possibility to observe the behaviour of a system with the goal of collecting metrics (e.g., related to execution time). AIPHS is a flexible framework that targets both SoCs implemented on Field Programmable Gate Arrays (FPGAs) and on Integrated Circuits integrating some reconfigurable logics.
 AIPHS is a library of elements that, starting from some monitorability requirements and a description of the architecture, automatically offers a monitoring system that performs required measurements.
 
-There are different planned steps related to AIPHS development in the context of MegaMart2 project, listed in the following:
-- baseline/initial version
-	- Distributed hardware monitoring system for targets implemented on FPGAs;
-	- Run-time generation of logs for WCET analysis;
-	- Runtime generation of logs for performance measurements on targets with multi-core processors, running bare-metal and Linux based applications;
-- intermediate version
-	- Generalization of the concept among monitoring infrastructures by defining a general reference architecture that can be adapted to different applications;
-- final version
-	- Development of a methodology to suggest the best monitoring mechanisms to be used in a given system, depending on data of interest and constraints to be satisfied;
-
-The current development activities provide features related to final version, still work-in-progress. In particular:
-- AIPHS is able to monitor hardware targets for which the Register-Transfer-Level source code is available. The current supported processor is the Leon3 soft-core, available at the Cobham Gaisler website (https://www.gaisler.com/index.php/downloads/leongrlib).
-- The monitoring systems can be strongly customized acting directly on VHDL code. There is an example adaptation to provide logs for WCET analysis with Rapitime tool (https://www.rapitasystems.com/products/rapitime).
-- The monitoring system can monitor both bare-metal application and Linux-based ones.
-- The monitoring system can be controlled both by bare-metal applications and Linux-based ones.
+AIPHS is able to monitor hardware targets for which the Register-Transfer-Level source code is available. The current supported processor is the Leon3 soft-core, available at Cobham Gaisler website (https://www.gaisler.com/index.php/downloads/leongrlib).
+The final monitoring systems can be strongly customized acting directly on VHDL code. There is an example adaptation to provide logs for WCET analysis with Rapitime tool (https://www.rapitasystems.com/products/rapitime).
+The monitoring system can monitor both bare-metal application and Linux-based ones. Moreover, it can be controlled both by bare-metal applications and Linux-based ones.
 
 ## Installation Instructions
 In order to install the monitoring system, the following actions can be performed:
@@ -52,7 +40,7 @@ For getting started, we provide some guidelines in the folder "getting_started".
 ## FOLDERS
 
 getting_started
-- Instruction for getting started with an example of monitoring of bare-metal applications running on Leon3 processor.
+- Instructions for getting started with an example of monitoring of bare-metal applications running on Leon3 processor.
 
 aiphs
 - VHDL source files related to a hardware monitoring system for Leon3 processor, used in the getting_started.
