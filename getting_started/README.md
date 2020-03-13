@@ -17,8 +17,9 @@ Follow these steps to start using AIPHS:
 - Open a terminal inside it and set the Vivado 2017.4 environment variables by sourcing the settings64.sh script inside the Vivado installation folder (e.g., source /opt/Xilinx/Vivado/2017.4/settingsh.sh)
 - Go in the folder, using terminal, where there is the project associated with the Digilent Nexys4 DDR board. The folder is designs/leon3-digilent-nexys4ddr.
 - Type make clean && make distclean to clean the folder metadata.
-- Copy the files TOBEADDED
+- Copy all the files provided in the folder src/HW within the folder of your grlib library located at YOURGRLIBLIBRARY/lib/grlib/amba, apart the file named leon3mp.vhd that will be used in the next steps. These files are the files of the monitoring system (written in HDL) and the modified script for GRLIB (in the .txt file). This step is strongly dependent on the selected monitored processor (in this case, the Leon3). Moreover, this step is equivalent to the addition of HDL source files within the whole project.
 - Type make xconfig to configure the system based on Leon3. To start with a single core configuration, without Memory Management Unit, with small data and instruction caches, an ethernet controller, a UART controller and two timers, please leave the configuration as default. If you want to change some parameters, you can easily do by means of graphical interface. At the end, click on Save and Exit.
+- Copy the file leon3mp.vhd , provided in the folder src/HW, within the folder YOURGRLIBLIBRARY/designs/leon3-digilent-nexys4ddr, overwriting the existing file.
 - Type make vivado to launch the synthesis: it will take around 20 minutes to complete, depending on system configuration. This command assume that you have installed Vivado on your computer and that you set the related environment variables as indicated above.
 - Connect the board to the computer, set the jumper configuration for JTAG programming and power-on the board.
 - Type make vivado-prog-fpga to download the generated bitstream, containing the hardware, to the FPGA. This will connect the FPGA components as set in your configuration.
