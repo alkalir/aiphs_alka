@@ -26,7 +26,7 @@ Follow these steps to start using AIPHS:
 - Download the bare-metal cross-compiler (BCC) for Leon3 processor from the following link: https://www.gaisler.com/anonftp/bcc2/bin/. Select the 2.1.1. GCC version "bcc-2.1.1-gcc-linux64.tar.xz".
 - Extract it within /opt folder of your Ubuntu system.
 - Having the Eclipse C/C++ installed in your PC, set the environment to cross-compile Leon3 applications following the instructions at the following link: https://www.gaisler.com/eclipse/qsg_sw_ide.pdf 
-- Cross-compile the application contained within TOBEADDED
+- Cross-compile the application contained within the folder src/SW
 - Download the GRMON debugger (evaluation version) for connecting to the target at the following link: https://www.gaisler.com/index.php/downloads/debug-tools
 - Extract it within the /opt folder and add the GRMON executable to the PATH of your Ubuntu system.
 - Launch GRMON and connect to the target with the command "grmon -digilent".
