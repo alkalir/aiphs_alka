@@ -1,10 +1,11 @@
 This is the repository of JOINTER, a tool to build monitoring systems that aims at offering to the user the support on building custom monitors to runtime observe SW and HW-tasks execution implemented on FPGA.
 To have a general view and explanation of JOINTER and its parts, please refer to [1], [2], and [3]. <br />
-With the proposed tool, it is possible to build its own monitor by using the elements part of a library. In this repository, the library is proposed, together with some configuration files to customize the final monitor. <br />
+With the proposed tool, designers are able to build their own monitor by using the elements part of some libraries. In this repository, these libraries are made available in form of VHDL-described IP-cores, together with some configuration files to customize the final monitor. <br />
 Furthermore, some examples of monitors developed using the proposed tool are proposed: in each example, the configuration files to customize the monitor are proposed, together with a brief explanation of the choices. In addition, the steps to work with the example are reported, in order to offer a way to reproduce the tests.
 
 # Creation of a custom monitoring system
-**TODO: spiegazione della configurazione mediante il file config.vhd**
+The libraries to build a custom monitoring system are provided in the lib folder.<br />
+
 
 # Prerequisites to run the examples
 - Python
