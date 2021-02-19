@@ -8,37 +8,65 @@
 - Xilinx Vivado Design Suite (Webpack edition is enough to run the proposed examples)
 
 
-## Example 1 - Monitor of a custom multiplier accelerator developed with the MDC tool #
-In this example, we are going to monitor an MDC-based coprocessor (i.e., developed using the MDC tool, where MDC stands for [Multi-Dataflow Composer](https://github.com/mdc-suite/mdc)).
-It is worth notice that the monitoring system is widely portable, and can target also other coprocessors with little effort. 
+## Example 1 - Monitor of a custom multiplier coprocessor developed with the MDC tool #
 
-The monitoring system is composed of a number of generic sniffers, that can be connected at different points of MDC-based coprocessors. Specifically, the following “coprocessor points” are considered: **TODO: mettere nomi del paper TECS**
-- First Level: a point where external processors exchange data with the coprocessor, e.g., a bus;
-- Second Level: a point that manages the start and end of execution of HW-tasks;
-- Third Level: a point where the coprocessor performs the computations associated to the HW-task.
+In this example, we are going to monitor an MDC-based coprocessor (i.e., developed using the MDC tool, where MDC stands for [Multi-Dataflow Composer](https://github.com/mdc-suite/mdc)), part of a system where there is also a dual-core ARM Cortex A9. Both the coprocessor and processor share an external DRAM. The coprocessor is able to automatically read data from DRAM, by using a DMA, and to write back results in DRAM, notifying the processor. <br />
 
-**TODO: portare il concetto di LMIC**
+The goal of the monitoring process is to measure the following metrics:<br />
 
-Each sniffer can be customized, at design-time, to be connected only at the levels of interest. The connection at each level allows to measure a metric: 
-- Sniffer at first level: number of written bytes from a master to a memory mapped coprocessor. The sniffer is able to monitor (i.e., to count) only the writes within a range of memory addresses. The range is programmable at runtime.
-- Sniffer at second level: latency of the coprocessing. The sniffer is able to measure the time between the start and the end of the HW-task execution, without considering data access time.
-- Sniffer at third level: number of transactions happened inside the coprocessor. The sniffer is able to count the number of transaction of custom signals extracted from the computation area of the coprocessor.
+- number of written bytes from ARM to coprocessor;
 
-The monitoring system construction and connection to MDC-based coprocessors is supported by a Python based script, together with some example applications.
+- latency of the coprocessing;
 
-The three levels, considering the impact of event_attr, acc_id and level_id, have the following range:
-- first level can count from 1 to 1 MB of data;
-- second level, that has a result 64-bits wide, can monitor a latency of up to 4.5e15 clock cycles that, for a clock period equal to 10 ns, represents a maximum latency of 52 days for the coprocessor;
-- third level has a structure that can be further customized. In particular, the third level monitor works by associating an event line with a custom size result and a custom increment.
+- number of transactions of selected signals happening inside the coprocessor. The selected signals are made available on a trace port part of the coprocessor.
 
-Follows the steps below:
+
+
+
+We build three sniffers using the JOINTER library, to be connected and extract occurrences from three points of the coprocessor:<br />
+
+- Transaction Level: a point inside the coprocessor where there is the management of data exchange with the rest of the system (e.g., the bus interface controller);
+
+- Task Level: a point inside the coprocessor where there is the management of start, stop, and I/O data of the executed HW-Task;
+
+- Operation Level: a point where the coprocessor performs the computations associated to the HW-task.
+
+
+Each sniffer is customized to be connected at the levels of interest. In particular:<br />
+
+- The sniffer at transaction level is able to count only the writes within a range of memory addresses. The range is programmable at runtime.
+
+- The sniffer at task level is able to measure the time between the start and the end of the HW-task execution, without considering data access time.
+
+- The sniffer is able to count the number of transaction of custom signals extracted from the computation area of the coprocessor.
+
+
+An LMIC controls the three sniffers, and all of them write their results directly to registers part of a DCI. The DCI also interacts through an AXI4-lite bus with a host, represented by the ARM Cortex A9 in our example. <br />
+
+
+
+The final monitoring system is provided to users as ready-to-use. By exploiting the customization capabilities provided by JOINTER, we provide a GUI-configuration that allows the configuration of the monitoring system, at design-time, in order to implement only the required sniffers inside the final scheme. We also provide scripts to automatically build the system and to connect the monitor to the MDC-based coprocessor and host.
+
+The three sniffers work with the following limitations:<br />
+
+- the transaction level sniffer can count from 1 to 1 MB of data;
+
+- the task level sniffer, that has a time-monitor configured with a counter 64-bits wide, can monitor a latency of up to 4.5e15 clock cycles that, for a clock period equal to 10 ns, represents a maximum latency of 52 days for the coprocessor;
+
+- the operation level sniffer has a structure that can be customized through the GUI-configuration.
+
+The monitoring of two MDC-based coprocessors is described in the following. 
+
+### Custom multiplications
+In the custom multiplications example, you will start from an application that is able to multiply the input values. Specifically, after receiving 48 numbers as input, the application performs the multiplication of the first 16 numbers, the second 16 numbers, and the third 16 numbers.<br />
+This application, that can be executed in software, is a good candidate for acceleration, since it is parallelizable. Therefore, a coprocessor has been developed using MDC, whose output files are reported in getting_started/MDC_outputs/custom_multiplications folder. The output files contains the HDL source files describing the coprocessor: in addition, MDC produces two TCL scripts that automatically generate a Vivado project with the coprocessor connected to a dual-core ARM processor of the Zynq7000 SoC. Notice that the MDC outputs are provided targeting two different Zynq7000 development boards: Arty-Z720 and Zedboard. 
+
+Follows the steps below to reproduce the example and use the monitor for coprocessors:<br />
 1. Clone the repository
 2. Execute the script script.py with Python inside the SEL_FOL. The first time you will get an error: however, you will get the downloaded files to populate your folder, necessary to executed JOINTER.
 3. Two application examples are provided together with the tool: custom multiplications and sobel/roberts. Both applications are provided with their C source code, and both represent good candidate to be executed on a coprocessor, since they are highly parallelizable. In this regard, for both applications also a coprocessor is provided, developed using MDC. The two applications, with the provided content, can be found inside the getting_started repository folder
 
-### Custom multiplications
-In the custom multiplications example, you will start from an application that is able to multiply the input values. Specifically, after receiving 48 numbers as input, the application performs the multiplication of the first 16 numbers, the second 16 numbers, and the third 16 numbers.
-This application, that can be executed in software, is a good candidate for acceleration, since it is parallelizable. Therefore, a coprocessor has been developed using MDC, whose output files are reported in getting_started/MDC_outputs/custom_multiplications folder. The output files contains the HDL source files describing the coprocessor: in addition, MDC produces two TCL scripts that automatically generate a Vivado project with the coprocessor connected to a dual-core ARM processor of the Zynq7000 SoC. Notice that the MDC outputs are provided targeting two different Zynq7000 development boards: Arty-Z720 and Zedboard. 
+
 
 To use JOINTER in this example, perform the following steps
 1. open a shell and set the Vivado environment variables<br />
