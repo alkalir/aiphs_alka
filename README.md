@@ -3,9 +3,9 @@ To have a general view and explanation of JOINTER and its parts, please refer to
 With the proposed tool, designers are able to build their own monitor by using the elements part of some libraries. In this repository, these libraries are made available in form of VHDL-described IP-cores, together with some configuration files to customize the final monitor. <br />
 Furthermore, some examples of monitors developed using the proposed tool are proposed: in each example, the configuration files to customize the monitor are proposed, together with a brief explanation of the choices. In addition, the steps to work with the example are reported, in order to offer a way to reproduce the tests. <br />
 
-Information on how to create a custom monitoring system using JOINTER can be found in the [getting started](https://github.com/alkalir/jointer/tree/master/examples).
+Information on how to create a custom monitoring system using JOINTER can be found in the [getting started](https://github.com/alkalir/jointer/tree/master/getting_started).
 
-Examples involving monitoring systems built using JOINTER, together with step-by-step instructions to recreate them, can be found in the [examples page](www.google.it).
+Examples involving monitoring systems built using JOINTER, together with step-by-step instructions to recreate them, can be found in the [examples page](https://github.com/alkalir/jointer/tree/master/examples).
 
 
 
