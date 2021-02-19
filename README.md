@@ -1,3 +1,5 @@
+# Jointer - Joining Flexible Monitoring with Heterogeneous Architectures
+
 This is the repository of JOINTER, a tool to build monitoring systems that aims at offering to the user the support on building custom monitors to runtime observe SW and HW-tasks execution implemented on FPGA.
 To have a general view and explanation of JOINTER and its parts, please refer to [1], [2], [3], and [4]. <br />
 With the proposed tool, designers are able to build their own monitor by using the elements part of some libraries. In this repository, these libraries are made available in form of VHDL-described IP-cores, together with some configuration files to customize the final monitor. <br />
