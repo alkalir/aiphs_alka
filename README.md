@@ -21,3 +21,7 @@ Examples involving monitoring systems built using JOINTER, together with step-by
 [3] G. Valente et al., "A Flexible Profiling Sub-System for Reconfigurable Logic Architectures," 2016 24th Euromicro International Conference on Parallel, Distributed, and Network-Based Processing (PDP), Heraklion, 2016, pp. 373-376, doi: 10.1109/PDP.2016.86.
 
 [4] V. Muttillo, G. Valente, L. Pomante, H. Posadas, J. Merino and E. Villar, "Run-time Monitoring and Trace Analysis Methodology for Component-based Embedded Systems Design Flow," 2020 23rd Euromicro Conference on Digital System Design (DSD), Kranj, Slovenia, 2020, pp. 117-125, doi: 10.1109/DSD51259.2020.00029.
+
+# Acknowledgements
+Jointer has been developed in the context of [MegaM@RT2](https://megamart2-ecsel.eu/), and is currently under active development in the context of [FitOptiVis](https://fitoptivis.eu/), [Fractal](https://fractal-project.eu/), and [Comp4Drones](https://www.comp4drones.eu/) European projects.
+
