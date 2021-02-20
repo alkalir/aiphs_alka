@@ -81,9 +81,9 @@ Follows the steps below to reproduce the example and use the monitor for coproce
 
 [//]: <Altro:> 
 
+<!---
 2. Execute the script script.py with Python inside the SEL_FOL. The first time you will get an error: however, you will get the downloaded files to populate your folder, necessary to executed JOINTER.
 3. Two application examples are provided together with the tool: custom multiplications and sobel/roberts. Both applications are provided with their C source code, and both represent good candidate to be executed on a coprocessor, since they are highly parallelizable. In this regard, for both applications also a coprocessor is provided, developed using MDC. The two applications, with the provided content, can be found inside the getting_started repository folder
-
 
 
 To use JOINTER in this example, perform the following steps
@@ -98,7 +98,7 @@ This will generate a Vivado project that makes use of the MDC coprocessor connec
 7. A Vivado project containing the coprocessor connected to the dual-core ARM Cortex A9, together with the monitoring system, will be opened.
 8. The final folder structure highlights the presence of a project_monitored inside, that contains the new generated project.
 9. Generate the bitstream and exports the hardware to Xilinx Vitis or XSDK (depending on the Vivado version installed on your PC).
-
+-->
 
 ### Monitor of Sobel/Roberts coprocessor
 
