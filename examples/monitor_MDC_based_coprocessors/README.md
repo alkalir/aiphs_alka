@@ -43,7 +43,8 @@ An LMIC controls the three sniffers, and all of them write their results directl
 
 
 
-The final monitoring system is provided to users as ready-to-use. By exploiting the customization capabilities provided by JOINTER, we provide a GUI-configuration that allows the configuration of the monitoring system, at design-time, in order to implement only the required sniffers inside the final scheme. We also provide scripts to automatically build the system and to connect the monitor to the MDC-based coprocessor and host.
+The final monitoring system is provided to users as ready-to-use. By exploiting the customization capabilities provided by JOINTER, we provide a GUI-configuration that allows the configuration of the monitoring system, at design-time, in order to implement only the required sniffers inside the final scheme. We also provide scripts to automatically build the system and to connect the monitor to the MDC-based coprocessor and host.<br />
+In this way, users can develop their own MDC-based coprocessor, and automatically add the monitoring levels required, selecting among the available metrics reported above.
 
 The three sniffers work with the following limitations:<br />
 
@@ -56,11 +57,30 @@ The three sniffers work with the following limitations:<br />
 The monitoring of two MDC-based coprocessors is described in the following. 
 
 ## Example 1 - Monitor of a custom multiplier coprocessor #
-In the custom multiplications example, you will start from an application that is able to multiply the input values. Specifically, after receiving 48 numbers as input, the application performs the multiplication of the first 16 numbers, the second 16 numbers, and the third 16 numbers.<br />
-This application, that can be executed in software, is a good candidate for acceleration, since it is parallelizable. Therefore, a coprocessor has been developed using MDC, whose output files are reported in getting_started/MDC_outputs/custom_multiplications folder. The output files contains the HDL source files describing the coprocessor: in addition, MDC produces two TCL scripts that automatically generate a Vivado project with the coprocessor connected to a dual-core ARM processor of the Zynq7000 SoC. Notice that the MDC outputs are provided targeting two different Zynq7000 development boards: Arty-Z720 and Zedboard. 
+In the custom multiplications example, you will start from an application that is able to multiply the input values. 
+Specifically, after receiving 48 numbers as input, the application performs the multiplication of the first 16 numbers, the second 16 numbers, and the third 16 numbers.<br />
+This application, that can be executed in software, is a good candidate for acceleration, since it is parallelizable. Therefore, a coprocessor has been developed using MDC, whose output files are reported in examples/monitor_MDC_based_coprocessors/custom_multiplications folder.
+Inside the folder, one can find files for targeting either Zedboard or ArtyZ7 board. It is worth noting that the provided HDL descriptions are target independent, and other boards can be used. The scripts work only for systems implemented on Zynq7000 SoC.
+The output MDC files contain the HDL source files describing the coprocessor: in addition, MDC produces two TCL scripts that automatically generate a Vivado project with the coprocessor connected to a dual-core ARM processor of the Zynq7000 SoC. 
 
-Follows the steps below to reproduce the example and use the monitor for coprocessors:<br />
-1. Clone the repository
+Follows the steps below to reproduce the example and use the monitor for coprocessors on custom multiplier (where we suppose to target the Zedboard):<br />
+1. clone the repository;
+2. copy the MDC output files from examples/monitor_MDC_based_coprocessors/custom_multiplications/zedboard to examples/monitor_MDC_based_coprocessors/jointer_MDC/project folder.
+3. open Vivado in project mode;
+4. by using the TCL shell, move to examples/monitor_MDC_based_coprocessors/jointer_MDC/project folder. Here you will find two folders: scripts and mm_accelerator;
+5. by using the top-level menu, execute the TCL script called generate_ip.tcl inside the scripts folder;
+6. by using the top-level menu, execute the TCL script called generate_top.tcl inside the scripts folder;
+7. at this point, you will get a Vivado project with a block design where the ARM processor shares an external DRAM with the MDC-based multiplier;
+8. close the Vivado project and move with a shell inside examples/monitor_MDC_based_coprocessors/jointer_MDC;
+9. execute the Python script (named script.py) inside that folder. This will open the window to customize the monitor to be introduced within the project. Be aware to select the Custom Multiplications example. At the end, press Generate;
+10. a Vivado project containing the coprocessor connected to the dual-core ARM Cortex A9, together with the monitoring system, will be opened;
+11. The final folder structure in examples/monitor_MDC_based_coprocessors/jointer_MDC highlights the presence of a project_monitored inside, that contains the new generated project;
+12. generate the bitstream and exports the hardware to Xilinx Vitis or XSDK (depending on the Vivado version installed on your PC);
+13. in order to change the monitoring configuration, just delete the project_monitored folder and re-run the Python script;
+
+
+Altro:
+
 2. Execute the script script.py with Python inside the SEL_FOL. The first time you will get an error: however, you will get the downloaded files to populate your folder, necessary to executed JOINTER.
 3. Two application examples are provided together with the tool: custom multiplications and sobel/roberts. Both applications are provided with their C source code, and both represent good candidate to be executed on a coprocessor, since they are highly parallelizable. In this regard, for both applications also a coprocessor is provided, developed using MDC. The two applications, with the provided content, can be found inside the getting_started repository folder
 

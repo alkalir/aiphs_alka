@@ -1,0 +1,2 @@
+sobel --> config id:1
+roberts --> config id:2
