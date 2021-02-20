@@ -79,7 +79,7 @@ Follows the steps below to reproduce the example and use the monitor for coproce
 13. in order to change the monitoring configuration, just delete the project_monitored folder and re-run the Python script;
 
 
-Altro:
+[//]: <> Altro:
 
 2. Execute the script script.py with Python inside the SEL_FOL. The first time you will get an error: however, you will get the downloaded files to populate your folder, necessary to executed JOINTER.
 3. Two application examples are provided together with the tool: custom multiplications and sobel/roberts. Both applications are provided with their C source code, and both represent good candidate to be executed on a coprocessor, since they are highly parallelizable. In this regard, for both applications also a coprocessor is provided, developed using MDC. The two applications, with the provided content, can be found inside the getting_started repository folder
