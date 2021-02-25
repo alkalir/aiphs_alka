@@ -5,7 +5,7 @@ The structure of the monitoring system is reported in the following figure:
 
 ![Global-Monitor](https://i.imgur.com/xqNAz9M.png)
 
-where there are seven sniffers distributed inside the components of a reference architecture (left-side of the image). Sniffers are controlled in teams: each team of sniffers can be controlled through a Local Monitoring Information Collector (LMIC). Sniffers write their results (monitoring information) to dedicated registers, part of a Data Collector Interface (DCI). In addition, the DCI allows controlling the sniffers through the LMICs and accessing monitoring information through a host. The register space of the DCI is shown in the following figure:
+where there are seven sniffers distributed inside the components of a reference architecture (left-side of the image). Sniffers are controlled in teams: each team of sniffers can be controlled through a Local Monitoring Information Collector (LMIC). Sniffers write their results (monitoring information) to dedicated registers, part of a Data Collector Interface (DCI). In addition, the DCI allows controlling the sniffers through the LMICs and accessing monitoring information through a host. The register space of the DCI is shown in the b) side of the following figure:
 
 ![reg-space](https://i.imgur.com/HoEV4TB.png) 
 
