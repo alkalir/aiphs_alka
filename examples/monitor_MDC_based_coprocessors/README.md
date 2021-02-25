@@ -32,11 +32,11 @@ We build three sniffers using the JOINTER library, to be connected and to extrac
 
 Each sniffer is customized to be connected at the levels of interest and to measure the required metrics. In particular:<br />
 
-- The sniffer at transaction level is able to count the writes within a range of memory addresses. The range is programmable at runtime. There is one DCAPF inside the sniffer.
+- The sniffer at transaction level is able to count the writes within a range of memory addresses. The range is programmable at runtime. There is one DCAPF inside the sniffer, with an event monitor where a filter has been added.
 
-- The sniffer at task level is able to measure the time between the start and the end of the HW-task execution, without considering data access time. There is one DCAPF inside the sniffer.
+- The sniffer at task level is able to measure the time between the start and the end of the HW-task execution, without considering data access time. There is one DCAPF inside the sniffer, with a time monitor, without the filter.
 
-- The sniffer is able to count the number of transaction of custom signals extracted from the computation area of the coprocessor. There is a number of DCAPFs inside the sniffer equal to the number of custom signals for which the monitor is required.
+- The sniffer is able to count the number of transaction of custom signals extracted from the computation area of the coprocessor. There is a number of DCAPFs inside the sniffer equal to the number of custom signals for which the monitor is required: each DCAPFs contain an event monitor, where the filter has been disabled.
 
 
 A single LMIC controls the three sniffers, and all of them write their results directly to registers part of a DCI. The DCI also interacts through an AXI4-lite bus with a host, represented by the ARM Cortex A9 in our example. <br />
@@ -50,7 +50,7 @@ The three sniffers work with the following limitations:<br />
 
 - the transaction level sniffer can count from 1 to 1 MB of data;
 
-- the task level sniffer, that has a time-monitor configured with a counter 64-bits wide;
+- the task level sniffer has the time monitor configured as 64-bits wide;
 
 - the operation level sniffer has a structure that can be customized through the GUI-configuration.
 
@@ -78,6 +78,26 @@ Follows the steps below to reproduce the example and use the monitor for coproce
 12. generate the bitstream and exports the hardware to Xilinx Vitis or XSDK (depending on the Vivado version installed on your PC);
 13. in order to change the monitoring configuration, just delete the project_monitored folder and re-run the Python script;
 
+## Example 2 - Monitor of a custom Sobel/Roberts edge-detection coprocessor #
+In the Sobel/Roberts example, you will start from an application that is able to get images as input, perform a tiling, obtaining 256 blocks, perform the Sobel or Roberts filtering on each block (depending on some inputs), and perform the untiling. The output is an image containing the edges of the input one. <br />
+This application, that can be executed in software, is a good candidate for acceleration, since it is parallelizable. Therefore, a coprocessor has been developed using MDC, whose output files are reported in *examples/monitor_MDC_based_coprocessors/sobel_roberts* folder.
+Inside the folder, one can find files for targeting either Zedboard or ArtyZ7 board. It is worth noting that the provided HDL descriptions are target independent, and other boards can be used. The scripts work only for systems implemented on Zynq7000 SoC.
+The output MDC files contain the HDL source files describing the coprocessor: in addition, MDC produces two TCL scripts that automatically generate a Vivado project with the coprocessor connected to a dual-core ARM processor of the Zynq7000 SoC. 
+
+Follows the steps below to reproduce the example and use the monitor for coprocessors on Sobel/Roberts (where we suppose to target the Zedboard):<br />
+1. clone the repository;
+2. copy the MDC output files from *examples/monitor_MDC_based_coprocessors/sobel_roberts/zedboard* to *examples/monitor_MDC_based_coprocessors/jointer_MDC/project* folder.
+3. open Vivado in project mode;
+4. by using the TCL shell, move to *examples/monitor_MDC_based_coprocessors/jointer_MDC/project* folder. Here you will find two folders: scripts and mm_accelerator;
+5. by using the top-level menu, execute the TCL script called generate_ip.tcl inside the scripts folder;
+6. by using the top-level menu, execute the TCL script called generate_top.tcl inside the scripts folder;
+7. at this point, you will get a Vivado project with a block design where the ARM processor shares an external DRAM with the MDC-based multiplier;
+8. close the Vivado project and move with a shell inside *examples/monitor_MDC_based_coprocessors/jointer_MDC*;
+9. execute the Python script (named script.py) inside that folder. This will open the window to customize the monitor to be introduced within the project. Be aware to select the Sobel/Roberts example. At the end, press Generate;
+10. a Vivado project containing the coprocessor connected to the dual-core ARM Cortex A9, together with the monitoring system, will be opened;
+11. The final folder structure in *examples/monitor_MDC_based_coprocessors/jointer_MDC* highlights the presence of a project_monitored inside, that contains the new generated project;
+12. generate the bitstream and exports the hardware to Xilinx Vitis or XSDK (depending on the Vivado version installed on your PC);
+13. in order to change the monitoring configuration, just delete the project_monitored folder and re-run the Python script;
 
 <!---
 [//]: <Altro:> 

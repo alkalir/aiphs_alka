@@ -329,26 +329,26 @@ selectexp.grid_forget()
 
 
 # check buttons
-Label(window, text='Select Monitor level').grid(column=0, row=4, sticky='W')
+Label(window, text='Select Sniffer level').grid(column=0, row=4, sticky='W')
 level1 = IntVar()
 level2 = IntVar()
 level3 = IntVar()
-first = Checkbutton(window, text='1st', variable=level1, onvalue=1, offvalue=0).grid(column=0, row=5, sticky='W')
-second = Checkbutton(window, text='2nd', variable=level2, onvalue=1, offvalue=0).grid(column=0, row=6, sticky='W')
-third = Checkbutton(window, text='3rd', variable=level3, onvalue=1, offvalue=0, command=show_option).grid(column=0, row=7, sticky='W')
+first = Checkbutton(window, text='Transaction Level', variable=level1, onvalue=1, offvalue=0).grid(column=0, row=5, sticky='W')
+second = Checkbutton(window, text='Task Level', variable=level2, onvalue=1, offvalue=0).grid(column=0, row=6, sticky='W')
+third = Checkbutton(window, text='Operation Level', variable=level3, onvalue=1, offvalue=0, command=show_option).grid(column=0, row=7, sticky='W')
 
 # element of third monitor
-numEventL = Label(window, text='Numero di eventi')
+numEventL = Label(window, text='\nNumber of custom events \n at trace port \n to be monitored')
 numEventL.grid_forget()
 numEvent = Entry(window, width=4)
 numEvent.grid_forget()
-nrrValL = Label(window, text='numero del registro \nrelativo associato allo \nstorage del risultato \ndi ogni evento\n(separati da virgola)')
+nrrValL = Label(window, text='\nRelative register number \n for the storage of\nmonitoring information \n associated to each \n custom event \n (comma separated)')
 nrrValL.grid_forget()
 nrrValL['background'] = ''
 nrrVal = Entry(window, width=18)
 nrrVal.grid_forget()
 
-sizeCountersVallL = Label(window, text='size del risultato\n associata ad ogni evento\n(separati da virgola)')
+sizeCountersVallL = Label(window, text='\nSize of the result\n associated to each \n custom event \n (comma separated)')
 sizeCountersVallL.grid_forget()
 sizeCountersVallL['background'] = ''
 sizeCountersVall = Entry(window, width=18)
