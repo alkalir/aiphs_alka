@@ -10,8 +10,8 @@ where there are seven sniffers distributed inside the components of a reference 
 ![reg-space](https://i.imgur.com/HoEV4TB.png) 
 
 Each LMIC has three assigned register areas inside the DCI register space, as reported in a) side of the figure: a single Control register (to control sniffers connected to that LMIC), a single Init register (to initialize the internal DCAPFs of the sniffers connected to that LMIC), and some Result Registers (where sniffers write their monitoring information). All the LMICs, together with a Data Collector Interface (DCI) and an Interrupt Controller, constitute the Global Monitor. <br />
-The right-side of the picture shows the internal of each sniffers, composed of an Event Instance Generator (EIG), one or multiple Data Capture and Filters (DCAPFs), and a Dispenser. It is worth noting that each DCAPF can measure a metric. <br />
-The internal structure of the DCAPF is reported in the b) side of the following figure:
+The right-side of the picture at top of the page shows the internals of each sniffers, composed of an Event Instance Generator (EIG), one or multiple Data Capture and Filters (DCAPFs), and a Dispenser. It is worth noting that each DCAPF can measure a metric. <br />
+The internal structure of the DCAPF is reported in the following figure:
 ![DCAPF](https://i.imgur.com/J52LpmJ.png)
 
 
