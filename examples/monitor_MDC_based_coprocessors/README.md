@@ -3,7 +3,7 @@
 ## Prerequisites to run the example
 - Python
 - PIP Package Manager
-- Some dedicated Python libraries: move to folder with the file *requirements.txt* and type:
+- Some dedicated Python libraries; after cloning the repository, move to folder *examples/monitor_MDC_based_coprocessors/jointer_MDC* and type:
 `pip install -r requirements.txt`
 - Xilinx Vivado Design Suite (Webpack edition is enough to run the proposed examples)
 
@@ -30,16 +30,16 @@ We build three sniffers using the JOINTER library, to be connected and to extrac
 - Operation Level: a point where the coprocessor performs the computations associated to the HW-task.
 
 
-Each sniffer is customized to be connected at the levels of interest. In particular:<br />
+Each sniffer is customized to be connected at the levels of interest and to measure the required metrics. In particular:<br />
 
-- The sniffer at transaction level is able to count only the writes within a range of memory addresses. The range is programmable at runtime.
+- The sniffer at transaction level is able to count the writes within a range of memory addresses. The range is programmable at runtime. There is one DCAPF inside the sniffer.
 
-- The sniffer at task level is able to measure the time between the start and the end of the HW-task execution, without considering data access time.
+- The sniffer at task level is able to measure the time between the start and the end of the HW-task execution, without considering data access time. There is one DCAPF inside the sniffer.
 
-- The sniffer is able to count the number of transaction of custom signals extracted from the computation area of the coprocessor.
+- The sniffer is able to count the number of transaction of custom signals extracted from the computation area of the coprocessor. There is a number of DCAPFs inside the sniffer equal to the number of custom signals for which the monitor is required.
 
 
-An LMIC controls the three sniffers, and all of them write their results directly to registers part of a DCI. The DCI also interacts through an AXI4-lite bus with a host, represented by the ARM Cortex A9 in our example. <br />
+A single LMIC controls the three sniffers, and all of them write their results directly to registers part of a DCI. The DCI also interacts through an AXI4-lite bus with a host, represented by the ARM Cortex A9 in our example. <br />
 
 
 
@@ -50,7 +50,7 @@ The three sniffers work with the following limitations:<br />
 
 - the transaction level sniffer can count from 1 to 1 MB of data;
 
-- the task level sniffer, that has a time-monitor configured with a counter 64-bits wide, can monitor a latency of up to 4.5e15 clock cycles that, for a clock period equal to 10 ns, represents a maximum latency of 52 days for the coprocessor;
+- the task level sniffer, that has a time-monitor configured with a counter 64-bits wide;
 
 - the operation level sniffer has a structure that can be customized through the GUI-configuration.
 
