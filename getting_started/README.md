@@ -38,7 +38,7 @@ In case the monitoring information are made available through an external memory
 
 - COMPOSE THE GLOBAL MONITOR - Open your *global_mon.vhd* and instantiate the DCI and the LMICs;
 
-- CONNECT THE GLOBAL MONITOR - Connect the global monitor monitor to the host and to the monitored interconnections.
+- CONNECT THE GLOBAL MONITOR - Connect the global monitor to the host and to the monitored interconnections.
 
 # APIs
 The APIs to use the generated monitoring systems are contained in lib/SW folder. <br />
