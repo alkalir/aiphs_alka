@@ -31,17 +31,14 @@ Create an EIG for each sniffer able to output all the required types of event in
 
 - COMPOSE THE SNIFFERS - Compose each sniffer with the created DCAPFs and EIGs;
 
-- CREATE THE LMICs - Create LMICs and instantiate the sniffers inside them. You can find examples of LMIC inside the *GLOBAL_MONITOR/LMIC* folder;
+- CREATE THE LMICs - Create LMICs and instantiate the sniffers inside them. You can find examples of LMICs inside the *GLOBAL_MONITOR/LMIC* folder;
 
-- CREATE THE DCI- 
+- CREATE THE DCI- Create a DCI module (e.g., inside a *dci.vhd* file) and decide how to store monitoring information from LMICs and how to make them available for the host. In addition, how to receive control and initialization commands from the host is also decided here. You can find examples of DCI inside the *GLOBAL_MONITOR/DCI* folder. DCI are provided to interact with hosts through AXI4, AXI4-Lite, APB, and AHB buses. 
+In case the monitoring information are made available through an external memory (i.e., they need to be written in a master fashion), a module inside the DCI can be added. An example is provided in *GLOBAL_MONITOR/DCI/bram_writer.vhd*;
 
-- 
+- COMPOSE THE GLOBAL MONITOR - Open your *global_mon.vhd* and instantiate the DCI and the LMICs;
 
-- Open your *global_mon.vhd* and instantiate a DCI (e.g., from a *dci.vhd* file) and at least one LMIC (e.g., from an *lmic.vhd* file). You can find examples of DCI and LMIC inside *GLOBAL_MONITOR/DCI* and *GLOBAL_MONITOR/LMIC*, respectively. DCI are provided to interact with hosts through AXI4, AXI4-Lite, APB, and AHB buses;
-
-- open your *dci.vhd* and decide whether to write monitoring information in a master fashion, or to access them in a slave fashion. The latter requires the addition of a module able to custom write to dedicated memory. An example is provided in *GLOBAL_MONITOR/DCI/bram_writer.vhd*.
-
-- open your *lmic.vhd* and decide how many sniffers to instantiate. This depend on the types of measure that you need to perform
+- CONNECT THE GLOBAL MONITOR - Connect the global monitor monitor to the host and to the monitored interconnections.
 
 # APIs
 The APIs to use the generated monitoring systems are contained in lib/SW folder. <br />
