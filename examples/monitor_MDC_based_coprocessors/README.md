@@ -65,9 +65,9 @@ The output MDC files contain the HDL source files describing the coprocessor: in
 
 Follows the steps below to reproduce the example and use the monitor for coprocessors on custom multiplier (where we suppose to target the Zedboard):<br />
 1. clone the repository;
-2. copy the MDC output files from *examples/monitor_MDC_based_coprocessors/custom_multiplications/zedboard* to *examples/monitor_MDC_based_coprocessors/jointer_MDC/project folder*.
+2. copy the MDC output files from *examples/monitor_MDC_based_coprocessors/custom_multiplications/zedboard* to *examples/monitor_MDC_based_coprocessors/jointer_MDC/project* folder.
 3. open Vivado in project mode;
-4. by using the TCL shell, move to *examples/monitor_MDC_based_coprocessors/jointer_MDC/project folder*. Here you will find two folders: scripts and mm_accelerator;
+4. by using the TCL shell, move to *examples/monitor_MDC_based_coprocessors/jointer_MDC/project* folder. Here you will find two folders: scripts and mm_accelerator;
 5. by using the top-level menu, execute the TCL script called generate_ip.tcl inside the scripts folder;
 6. by using the top-level menu, execute the TCL script called generate_top.tcl inside the scripts folder;
 7. at this point, you will get a Vivado project with a block design where the ARM processor shares an external DRAM with the MDC-based multiplier;
