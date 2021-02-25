@@ -1,6 +1,6 @@
 # Creation of a custom monitoring system
 
-The structure of the monitoring system is reported in the following figure:
+The structure of the HW monitoring systems that can be generated using JOINTER is reported in the following figure:
 
 
 ![Global-Monitor](https://i.imgur.com/xqNAz9M.png)
@@ -15,7 +15,7 @@ The internal structure of the DCAPF is reported in the following figure:
 ![DCAPF](https://i.imgur.com/J52LpmJ.png)
 
 
-In order to build their custom monitoring system, designers can make usage of IP-cores contained in the libraries in lib/HW folder. It is worth noting that some custom monitoring systems, provided with a configuration files, are provided in the [examples](https://github.com/alkalir/jointer/tree/master/examples) page.
+In order to build their custom monitoring system, designers can make usage of IP-cores contained in the libraries in lib/HW folder. It is worth noting that some custom monitoring systems, provided with associated configuration files, are provided in the [examples](https://github.com/alkalir/jointer/tree/master/examples) page.
 The following steps offer a way to create a custom monitoring system by putting files in a *work_fol* folder, with reference to the content of the *lib/HW* folder (we suggest using a VHDL-editor with built-in features to check syntax errors, such as Xilinx Vivado or Intel Quartus II editors):<br />
 
 - CREATE THE GLOBAL MONITOR - Start by copying the *GLOBAL_MONITOR/global_mon.vhd* in your *work_fol*;
