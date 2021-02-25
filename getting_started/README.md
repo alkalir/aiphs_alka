@@ -1,5 +1,5 @@
 # Creation of a custom monitoring system
-The libraries to build a custom monitoring system are provided in the lib/HW folder.<br />
+
 The structure of the monitoring system is reported in the following figure:
 
 
@@ -15,7 +15,10 @@ The internal structure of the DCAPF is reported in the following figure:
 ![DCAPF](https://i.imgur.com/J52LpmJ.png)
 
 
- 
+In order to build their custom monitoring system, designers can make usage of IP-cores contained in the libraries in lib/HW folder.
+
+In particular ...
+
 
 # APIs
 The APIs to use the generated monitoring systems are contained in lib/SW folder. <br />
