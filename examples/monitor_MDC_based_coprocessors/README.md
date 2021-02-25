@@ -8,11 +8,11 @@
 - Xilinx Vivado Design Suite (Webpack edition is enough to run the proposed examples)
 
 ## Introduction
-In this example, we are going to monitor an MDC-based coprocessor (i.e., developed using the MDC tool, where MDC stands for [Multi-Dataflow Composer](https://github.com/mdc-suite/mdc)), part of a system where there is also a dual-core ARM Cortex A9. Both the coprocessor and processor share an external DRAM. The coprocessor is able to automatically read data from DRAM, by using a DMA, and to write back results in DRAM, notifying the processor. <br />
+In this example, we are going to monitor an MDC-based coprocessor (i.e., developed using the MDC tool, where MDC stands for [Multi-Dataflow Composer](https://github.com/mdc-suite/mdc)), part of a system where there is also a dual-core ARM Cortex A9 processor. Both the coprocessor and processor share an external DRAM. The coprocessor is able to automatically read data from DRAM, by using a DMA, and to write back results in DRAM, notifying the processor. <br />
 
 The goal of the monitoring process is to measure the following metrics:<br />
 
-- number of written bytes from ARM to coprocessor;
+- number of written bytes from external memory to coprocessor;
 
 - latency of the coprocessing;
 
@@ -21,7 +21,7 @@ The goal of the monitoring process is to measure the following metrics:<br />
 
 
 
-We build three sniffers using the JOINTER library, to be connected and extract occurrences from three points of the coprocessor:<br />
+We build three sniffers using the JOINTER library, to be connected and to extract occurrences from three points of the coprocessor:<br />
 
 - Transaction Level: a point inside the coprocessor where there is the management of data exchange with the rest of the system (e.g., the bus interface controller);
 

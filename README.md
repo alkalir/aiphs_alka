@@ -3,11 +3,11 @@
 This is the repository of JOINTER, a tool to build monitoring systems that aims at offering to the user the support on building custom monitors to runtime observe SW and HW-tasks execution implemented on FPGA.
 To have a general view and explanation of JOINTER and its parts, please refer to [1], [2], [3], and [4]. <br />
 With the proposed tool, designers are able to build their own monitor by using the elements part of some libraries. In this repository, these libraries are made available in form of VHDL-described IP-cores, together with some configuration files to customize the final monitor. <br />
-Furthermore, some examples of monitors developed using the proposed tool are proposed: in each example, the configuration files to customize the monitor are proposed, together with a brief explanation of the choices. In addition, the steps to work with the example are reported, in order to offer a way to reproduce the tests. <br />
+Furthermore, some examples of monitors developed using the proposed tool are proposed: in each example, the configuration files to customize the monitor are reported, together with a brief explanation of the choices. In addition, the steps to work with the example are provided, in order to offer a way to reproduce the tests. <br />
 
-Information on how to create a custom monitoring system using JOINTER and how to navigate the repository can be found in the [getting started](https://github.com/alkalir/jointer/tree/master/getting_started).
+Information on how to create a custom monitoring system using JOINTER and how to navigate the repository can be found in the [getting started](https://github.com/alkalir/jointer/tree/master/getting_started) page.
 
-Examples involving monitoring systems built using JOINTER, together with step-by-step instructions to recreate them, can be found in the [examples page](https://github.com/alkalir/jointer/tree/master/examples).
+Examples involving monitoring systems built using JOINTER, together with step-by-step instructions to recreate them, can be found in the [examples](https://github.com/alkalir/jointer/tree/master/examples) page.
 
 
 
