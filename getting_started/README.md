@@ -15,10 +15,33 @@ The internal structure of the DCAPF is reported in the following figure:
 ![DCAPF](https://i.imgur.com/J52LpmJ.png)
 
 
-In order to build their custom monitoring system, designers can make usage of IP-cores contained in the libraries in lib/HW folder.
+In order to build their custom monitoring system, designers can make usage of IP-cores contained in the libraries in lib/HW folder. It is worth noting that some custom monitoring systems, provided with a configuration files, are provided in the [examples](https://github.com/alkalir/jointer/tree/master/examples) page.
+The following steps offer a way to create a custom monitoring system by putting files in a *work_fol* folder, with reference to the content of the *lib/HW* folder (we suggest using a VHDL-editor with built-in features to check syntax errors, such as Xilinx Vivado or Intel Quartus II editors):<br />
 
-In particular ...
+- CREATE THE GLOBAL MONITOR - Start by copying the *GLOBAL_MONITOR/global_mon.vhd* in your *work_fol*;
 
+- CREATE THE SNIFFERS - Identify how many different interconnection points you need to monitor in your project, and create the corresponding number of sniffers. An interconnection point is defined as a point where (i) users require a measure, and (ii) signals evolve in the same clock domain. Supposing to monitor four different interconnection points, create four different sniffers. For example, a sniffer can be contained in a file named *sniff.vhd*. Examples of sniffers are contained in *GLOBAL_MONITOR/LMIC/SNIFFER* folder;
+
+- CREATE THE EIGs - Identify which types of metrics are required, associated to each sniffer. Then, identify the basic event instances associated to each metric: an event instance is defined as the basic element that, by means of an aggregate function, can provide the metrics as a result. The event instance structure is shown in the d) side of the second figure (shown above).
+Create an EIG for each sniffer able to output all the required types of event instances identified for that sniffer, starting from interconnection dependent signals. You can find examples of EIGs inside the *GLOBAL_MONITOR/LMIC/SNIFFER/EIG* folder;
+
+- CREATE THE DCAPFs - Identify how many different metrics, associated to each sniffer, are required, and create the corresponding number of DCAPFs. Connect as input to each DCAPF the required event instances (generated at the previous point);
+
+- COMPOSE THE DCAPF INTERNALS - Check which type of metrics are required and compose each DCAPF by introducing the required number of extractors and filters, together with a final aggregator. You can find examples of extractors, filters, and aggregators inside the *GLOBAL_MONITOR/LMIC/SNIFFER/DCAPF folder*;
+
+- COMPOSE THE SNIFFERS - Compose each sniffer with the created DCAPFs and EIGs;
+
+- CREATE THE LMICs - Create LMICs and instantiate the sniffers inside them. You can find examples of LMIC inside the *GLOBAL_MONITOR/LMIC* folder;
+
+- CREATE THE DCI- 
+
+- 
+
+- Open your *global_mon.vhd* and instantiate a DCI (e.g., from a *dci.vhd* file) and at least one LMIC (e.g., from an *lmic.vhd* file). You can find examples of DCI and LMIC inside *GLOBAL_MONITOR/DCI* and *GLOBAL_MONITOR/LMIC*, respectively. DCI are provided to interact with hosts through AXI4, AXI4-Lite, APB, and AHB buses;
+
+- open your *dci.vhd* and decide whether to write monitoring information in a master fashion, or to access them in a slave fashion. The latter requires the addition of a module able to custom write to dedicated memory. An example is provided in *GLOBAL_MONITOR/DCI/bram_writer.vhd*.
+
+- open your *lmic.vhd* and decide how many sniffers to instantiate. This depend on the types of measure that you need to perform
 
 # APIs
 The APIs to use the generated monitoring systems are contained in lib/SW folder. <br />
