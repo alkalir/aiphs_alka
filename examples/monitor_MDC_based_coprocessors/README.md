@@ -36,7 +36,7 @@ Each sniffer is customized to be connected at the levels of interest and to meas
 
 - The sniffer at task level is able to measure the time between the start and the end of the HW-task execution, without considering data access time. There is one DCAPF inside the sniffer, with a time monitor, without the filter.
 
-- The sniffer is able to count the number of transaction of custom signals extracted from the computation area of the coprocessor. There is a number of DCAPFs inside the sniffer equal to the number of custom signals for which the monitor is required: each DCAPFs contain an event monitor, where the filter has been disabled.
+- The sniffer is able to count the number of transaction of custom signals (custom events, hereinafter) extracted from the computation area of the coprocessor. There is a number of DCAPFs inside the sniffer equal to the number of custom signals for which the monitor is required: each DCAPFs contain an event monitor, where the filter has been disabled.
 
 
 A single LMIC controls the three sniffers, and all of them write their results directly to registers part of a DCI. The DCI also interacts through an AXI4-lite bus with a host, represented by the ARM Cortex A9 in our example. <br />
@@ -139,6 +139,5 @@ and executing the sobel in hardware, we obtain (be sure that inside the Sobel HW
 `terzo livello e0e00100 = ‭11100000111000000000000100000000‬`<br />
 `terzo livello e0e00100 = 11100000111000000000000100000000‬`<br />
 `terzo livello e0e00000 = ‭11100000111000000000000000000000‬`<br />
-
 
 
