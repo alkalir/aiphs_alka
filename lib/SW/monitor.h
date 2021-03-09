@@ -18,6 +18,7 @@
 #define STOP_ALL_CMD 0xFFFFFFFE
 #define REMOVE_RST_CMD 0xFFFFFFFD
 #define NORMAL_AXI_SNIFF 0x00000020
+#define DEBUG_TST_CODE 0x00000040
 
 // internal functions
 

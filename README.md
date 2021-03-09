@@ -12,6 +12,7 @@ Examples involving monitoring systems built using JOINTER, together with step-by
 
 
 
+
 # References
 
 [1] G. Valente, T. Fanni, C. Sau and F. Di Battista, "Layering the monitoring action for improved flexibility and overhead control: work-in-progress," 2020 International Conference on Hardware/Software Codesign and System Synthesis (CODES+ISSS), Singapore, 2020, pp. 18-20, doi: 10.1109/CODESISSS51650.2020.9244018.
