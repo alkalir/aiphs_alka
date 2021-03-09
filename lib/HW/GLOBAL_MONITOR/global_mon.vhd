@@ -166,7 +166,7 @@ lmic1_inst: lmic1
       tr_awaddr => s00_axi_awaddr,
       tr_wvalid => s00_axi_wvalid,
       
-      result_dci => sig_result_lmic1
+      result_dci => open
     );
 
 
