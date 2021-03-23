@@ -1,0 +1,37 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Mon Mar 15 18:31:00 2021
+| Host         : sohrabi-VirtualBox running 64-bit Ubuntu 16.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_global_mon_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_global_mon_0_0 (user.org:user:global_mon:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Mon Mar 15 18:28:59 2021
+| Host         : sohrabi-VirtualBox running 64-bit Ubuntu 16.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_global_mon_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_global_mon_0_0 (user.org:user:global_mon:1.0) from (Rev. 2) to (Rev. 3)
+

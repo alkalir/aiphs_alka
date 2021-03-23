@@ -1,0 +1,237 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Mar 13 18:35:38 2021
+# Process ID: 7738
+# Current directory: /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor
+# Command line: vivado
+# Log file: /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/vivado.log
+# Journal file: /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project_1 /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/project_1 -part xc7a35ticsg324-1L
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 6167.824 ; gain = 66.172 ; free physical = 12268 ; free virtual = 15567
+set_property board_part digilentinc.com:arty:part0:1.1 [current_project]
+set_property target_language VHDL [current_project]
+add_files -norecurse {/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/acknowledger_AXI.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/smart_demux.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/aggregator_AXIfull.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/bram_writer.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/dci_old.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/event_data_manager.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/event_monitor.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/sniffer_AXI.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/dispenser_dcapf.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/config.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/timing_capturer.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/lmic1.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/aggregator_MBTP.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/dcapf_AXI.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/smart_counter.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/time_monitor.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/eig_AXIfull.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/filter.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/dci.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/sniffer_MBTP.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/catcher.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/dcapf_branch_taken.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/eig_AXI.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/dcapf_axifull.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/eig_MBTP.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/sniffer_AXIfull.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/comp_prog.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/common_pack.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/pipo_reg.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/global_mon.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/init_dcapf.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/mux2to1.vhd /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/aggregator_AXI.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'global_mon' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/project_1/project_1.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj global_mon_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/config.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/common_pack.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/acknowledger_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity acknowledger_AXI
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/aggregator_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity aggregator_AXI
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/aggregator_AXIfull.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity aggregator_AXIfull
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/aggregator_MBTP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity aggregator_MBTP
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/bram_writer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity bram_writer
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/catcher.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity catcher
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/comp_prog.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity comp_prog
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/dcapf_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dcapf_AXI
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/dcapf_axifull.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dcapf_axifull
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/dcapf_branch_taken.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dcapf_branch_taken
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/dci_old.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dci
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/dispenser_dcapf.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dispenser_dcapf
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/eig_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity eig_AXI
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/eig_AXIfull.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity eig_AXIfull
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/eig_MBTP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity eig_MBTP
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/event_data_manager.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_data_manager
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/event_monitor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_monitor
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/filter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity filter
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/init_dcapf.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity init_dcapf
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/lmic1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lmic1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/mux2to1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux2to1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/pipo_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity pipo_reg
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/smart_counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity smart_counter
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/smart_demux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity smart_demux
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/sniffer_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sniffer_AXI
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/sniffer_AXIfull.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sniffer_AXIfull
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/sniffer_MBTP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sniffer_MBTP
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/time_monitor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity time_monitor
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/timing_capturer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity timing_capturer
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/global_mon.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity global_mon
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/project_1/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2017.4/bin/unwrapped/lnx64.o/xelab -wto 9273fc1491664942b5676599414ac225 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot global_mon_behav xil_defaultlib.global_mon -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <init3_lmic1> does not exist in entity <dci>.  Please compare the definition of block <dci> to its component declaration and its instantion to detect the mismatch. [/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/common_pack.vhd:450]
+ERROR: [VRFC 10-718] formal port <sel3> does not exist in entity <dci>.  Please compare the definition of block <dci> to its component declaration and its instantion to detect the mismatch. [/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/common_pack.vhd:456]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit global_mon in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+export_ip_user_files -of_objects  [get_files /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/dci_old.vhd] -no_script -reset -force -quiet
+remove_files  /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/dci_old.vhd
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'global_mon' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/project_1/project_1.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj global_mon_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/dci.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dci
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/project_1/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2017.4/bin/unwrapped/lnx64.o/xelab -wto 9273fc1491664942b5676599414ac225 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot global_mon_behav xil_defaultlib.global_mon -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.config
+Compiling package xil_defaultlib.common_pack
+Compiling architecture behavioral of entity xil_defaultlib.smart_counter [\smart_counter(dim_bit_g=14,incr...]
+Compiling architecture behavioral of entity xil_defaultlib.bram_writer [bram_writer_default]
+Compiling architecture arch_imp of entity xil_defaultlib.dci [dci_default]
+Compiling architecture behavioral of entity xil_defaultlib.eig_AXI [\eig_AXI(dim_event_g=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.smart_demux [smart_demux_default]
+Compiling architecture behavioral of entity xil_defaultlib.smart_counter [\smart_counter(dim_bit_g=1,incre...]
+Compiling architecture behavioral of entity xil_defaultlib.dispenser_dcapf [dispenser_dcapf_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux2to1 [mux2to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.event_data_manager [event_data_manager_default]
+Compiling architecture arc_comp_lt of entity xil_defaultlib.comp_prog [comp_prog_default]
+Compiling architecture behavioral of entity xil_defaultlib.filter [filter_default]
+Compiling architecture behavioral of entity xil_defaultlib.catcher [catcher_default]
+Compiling architecture behavioral of entity xil_defaultlib.pipo_reg [pipo_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.acknowledger_AXI [\acknowledger_AXI(ack_input_size...]
+Compiling architecture behavioral of entity xil_defaultlib.smart_counter [\smart_counter(increment_size_g=...]
+Compiling architecture behavioral of entity xil_defaultlib.time_monitor [\time_monitor(config_string="011...]
+Compiling architecture behavioral of entity xil_defaultlib.pipo_reg [\pipo_reg(size_g=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.init_dcapf [init_dcapf_default]
+Compiling architecture behavioral of entity xil_defaultlib.dcapf_AXI [\dcapf_AXI(config_string="01011"...]
+Compiling architecture behavioral of entity xil_defaultlib.aggregator_AXI [aggregator_axi_default]
+Compiling architecture behavioral of entity xil_defaultlib.sniffer_AXI [\sniffer_AXI(dim_event_g=32)\]
+Compiling architecture arc_comp_lt of entity xil_defaultlib.comp_prog [\comp_prog(dim_bus_g=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.eig_AXIfull [eig_axifull_default]
+Compiling architecture behavioral of entity xil_defaultlib.smart_counter [\smart_counter(dim_bit_g=32,incr...]
+Compiling architecture behavioral of entity xil_defaultlib.event_monitor [\event_monitor(incr_size_g=32,di...]
+Compiling architecture behavioral of entity xil_defaultlib.dcapf_axifull [\dcapf_axifull(incr_size_g=32,co...]
+Compiling architecture behavioral of entity xil_defaultlib.aggregator_AXIfull [aggregator_axifull_default]
+Compiling architecture behavioral of entity xil_defaultlib.sniffer_AXIfull [sniffer_axifull_default]
+Compiling architecture behavioral of entity xil_defaultlib.lmic1 [lmic1_default]
+Compiling architecture arch_imp of entity xil_defaultlib.global_mon
+Built simulation snapshot global_mon_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/global_mon_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Mar 13 18:43:23 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "global_mon_behav -key {Behavioral:sim_1:Functional:global_mon} -tclbatch {global_mon.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source global_mon.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'global_mon_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 6341.574 ; gain = 68.512 ; free physical = 12214 ; free virtual = 15516
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+ipx::package_project -root_dir /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs -vendor user.org -library user -taxonomy /UserIP -force
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'axi_data_width' by 32 for port or parameter 'C_S00_AXI_DATA_WIDTH'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'axi_addr_width' by 6 for port or parameter 'C_S00_AXI_ADDR_WIDTH'
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 's00_axi_aresetn' as interface 's00_axi_aresetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 's00_axi_aclk' as interface 's00_axi_aclk'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 's00_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's00_axi_aresetn'.
+ipx::unload_core /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/component.xml
+export_ip_user_files -of_objects  [get_files /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/component.xml] -no_script -reset -force -quiet
+remove_files  /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/component.xml
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+ipx::package_project -root_dir /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs -vendor user.org -library user -taxonomy /UserIP
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'axi_data_width' by 32 for port or parameter 'C_S00_AXI_DATA_WIDTH'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'axi_addr_width' by 6 for port or parameter 'C_S00_AXI_ADDR_WIDTH'
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 's00_axi_aresetn' as interface 's00_axi_aresetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 's00_axi_aclk' as interface 's00_axi_aclk'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 's00_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's00_axi_aresetn'.
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property  ip_repo_paths  /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 13 18:45:06 2021...

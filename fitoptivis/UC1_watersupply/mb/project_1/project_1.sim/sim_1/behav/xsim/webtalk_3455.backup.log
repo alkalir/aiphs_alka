@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Mar 17 12:43:34 2021
+# Process ID: 3455
+# Current directory: /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/mb_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/mb_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar 17 12:43:35 2021...

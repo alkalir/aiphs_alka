@@ -1,0 +1,327 @@
+15:11:06 **** Build of project test_bsp ****
+make -k all 
+Running Make include in microblaze_0/libsrc/cpu_v2_6/src
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/standalone_v6_5/src
+make -C microblaze_0/libsrc/standalone_v6_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/mm_accelerator_v1_0/src
+make -C microblaze_0/libsrc/mm_accelerator_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/bram_v4_2/src
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/gpio_v4_3/src
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make include in microblaze_0/libsrc/axicdma_v4_3/src
+make -C microblaze_0/libsrc/axicdma_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Running Make libs in microblaze_0/libsrc/cpu_v2_6/src
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/standalone_v6_5/src
+make -C microblaze_0/libsrc/standalone_v6_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+Running Make libs in microblaze_0/libsrc/mm_accelerator_v1_0/src
+make -C microblaze_0/libsrc/mm_accelerator_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling accelerator...
+Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartlite
+Running Make libs in microblaze_0/libsrc/bram_v4_2/src
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+Running Make libs in microblaze_0/libsrc/gpio_v4_3/src
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling gpio
+Running Make libs in microblaze_0/libsrc/axicdma_v4_3/src
+make -C microblaze_0/libsrc/axicdma_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling axicdma
+Finished building libraries
+15:11:09 **** Build of configuration Debug for project test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2748	    268	   3112	   6128	   17f0	test.elf
+Finished building: test.elf.size
+ 
+15:11:11 **** Auto Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for 'all'.
+15:11:46 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2624	    268	   3108	   6000	   1770	test.elf
+Finished building: test.elf.size
+ 
+15:11:56 **** Clean-only build of configuration Debug for project test ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  test.elf.size  test.elf
+ 
+15:11:57 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/mai.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mai.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mai.d" -MT"src/mai.o" -o "src/mai.o" "../src/mai.c"
+Finished building: ../src/mai.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/mai.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2624	    268	   3108	   6000	   1770	test.elf
+Finished building: test.elf.size
+ 
+15:12:06 **** Clean-only build of configuration Debug for project test ****
+make clean 
+rm -rf  ./src/mai.o ./src/platform.o  ./src/mai.d ./src/platform.d  test.elf.size  test.elf
+ 
+15:12:06 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2624	    268	   3108	   6000	   1770	test.elf
+Finished building: test.elf.size
+ 
+15:33:28 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:11:16: warning: unused variable 'base_monitor' [-Wunused-variable]
+  unsigned int *base_monitor = (unsigned int*)0x44A00000; // base monitor
+                ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2636	    268	   3112	   6016	   1780	test.elf
+Finished building: test.elf.size
+ 
+15:36:12 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2688	    268	   3108	   6064	   17b0	test.elf
+Finished building: test.elf.size
+ 
+15:39:34 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:1:21: fatal error: monitor.h: No such file or directory
+ #include "monitor.h"
+                     ^
+compilation terminated.
+src/subdir.mk:24: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+15:39:47 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/monitor.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/monitor.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/monitor.d" -MT"src/monitor.o" -o "src/monitor.o" "../src/monitor.c"
+Finished building: ../src/monitor.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/main.o ./src/monitor.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2076	    268	   3112	   5456	   1550	test.elf
+Finished building: test.elf.size
+ 
+15:40:33 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/main.o ./src/monitor.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2076	    268	   3112	   5456	   1550	test.elf
+Finished building: test.elf.size
+ 
+15:46:00 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for 'all'.
+15:46:08 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:32:10: error: 'bram' undeclared (first use in this function)
+        *(bram + i) = 1;
+          ^~~~
+../src/main.c:32:10: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:45:6: warning: implicit declaration of function 'mm_accelerator_no_parallel' [-Wimplicit-function-declaration]
+      mm_accelerator_no_parallel(
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+src/subdir.mk:27: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+15:46:26 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:48:6: warning: implicit declaration of function 'mm_accelerator_no_parallel' [-Wimplicit-function-declaration]
+      mm_accelerator_no_parallel(
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/main.o ./src/monitor.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2712	    268	   3108	   6088	   17c8	test.elf
+Finished building: test.elf.size
+ 
+15:47:00 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:48:6: warning: implicit declaration of function 'mm_accelerator_no_parallel' [-Wimplicit-function-declaration]
+      mm_accelerator_no_parallel(
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/main.o ./src/monitor.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2732	    268	   3112	   6112	   17e0	test.elf
+Finished building: test.elf.size
+ 
+15:47:12 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/main.o ./src/monitor.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2732	    268	   3112	   6112	   17e0	test.elf
+Finished building: test.elf.size
+ 
+09:54:28 **** Auto Build of configuration Debug for project test ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: test.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/main.o ./src/monitor.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: test.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2732	    268	   3112	   6112	   17e0	test.elf
+Finished building: test.elf.size
+ 

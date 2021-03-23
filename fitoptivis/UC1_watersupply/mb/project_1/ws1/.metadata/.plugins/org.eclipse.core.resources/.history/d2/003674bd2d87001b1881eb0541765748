@@ -1,0 +1,49 @@
+#include <xparameters.h>
+#include "mm_accelerator.h"
+
+int main()
+{
+
+	// microblaze mette i dati in BRAM di lavoro tramite axibram0 cntrl
+	int *bram = (int*)0xC0000000;
+
+	// unsigned int *base_cdma = (unsigned int*)XPAR_AXI_CDMA_0_BASEADDR;
+	//unsigned int *base_monitor = (unsigned int*)0x44A20000; // base monitor
+
+	// microblaze writes in BRAM di lavoro
+
+	    int i;
+	    for(i=0;i<48;i++) {
+	    	if(i<16)
+	    		*(bram + i) = 1;
+	    	else if(i<32)
+	    		*(bram + i) = 10;
+	    	else
+	    		*(bram + i) = -1;
+	    }
+
+	    // decido indirizzi uscite in BRAM di lavoro
+	    int *data_dout_0 = (int *)( bram + 60);
+	    int *data_dout_1 = (int *)( bram + 70);
+	    int *data_dout_2 = (int *)( bram + 80);
+
+	// monitor initialization
+	//*base_monitor = 322; // range monitor and soft reset
+	//	*(base_monitor+1) = 0x0; // low address
+	//	*(base_monitor+2) = 0xFFFFFFFF; // high address
+	//	*base_monitor = 290; // range monitor and run
+
+    mm_accelerator_no_parallel(
+    	1, data_dout_0,
+    	1, data_dout_1,
+    	1, data_dout_2,
+    	48,bram
+    	);
+
+	// monitor end
+	//*base_monitor = 258; // range monitor and stop
+
+
+
+	return 0;
+}

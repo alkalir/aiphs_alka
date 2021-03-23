@@ -1,0 +1,2427 @@
+!SESSION 2021-03-17 15:10:36.765 -----------------------------------------------
+eclipse.buildId=2017.4
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1
+
+!ENTRY org.eclipse.ui 2 0 2021-03-17 15:10:39.272
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2021-03-17 15:10:39.272
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2021-03-17 15:10:40.277
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2021-03-17 15:10:40.277
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:47.257
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:47.258
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:47.945
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:47.947
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:47.948
+!MESSAGE XSCT Command: [setws /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1], Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:47.951
+!MESSAGE XSCT command with result: [setws /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1], Result: [null, ]. Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:48.186
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:50.603
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:50.615
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:50.618
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"device": "7a35ti",
+"family": "artix7",
+"timestamp": "Mon Mar 15 18:37:26 2021",
+"vivado_version": "2017.4",
+"part": "xc7a35ticsg324-1L",
+}]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:50.620
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:50.631
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"axi_bram_ctrl_0": {"hier_name": "axi_bram_ctrl_0",
+"type": "axi_bram_ctrl",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"axi_bram_ctrl_1": {"hier_name": "axi_bram_ctrl_1",
+"type": "axi_bram_ctrl",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"axi_bram_ctrl_2": {"hier_name": "axi_bram_ctrl_2",
+"type": "axi_bram_ctrl",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"axi_cdma_0": {"hier_name": "axi_cdma_0",
+"type": "axi_cdma",
+"version": "4.1",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_0": {"hier_name": "axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_interconnect_0": {"hier_name": "axi_interconnect_0",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"blk_mem_gen_0": {"hier_name": "blk_mem_gen_0",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"blk_mem_gen_1": {"hier_name": "blk_mem_gen_1",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"clk_wiz_0": {"hier_name": "clk_wiz_0",
+"type": "clk_wiz",
+"version": "5.4",
+"ip_type": "PERIPHERAL",
+},
+"global_mon_0": {"hier_name": "global_mon_0",
+"type": "global_mon",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "10.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"mm_accelerator_0": {"hier_name": "mm_accelerator_0",
+"type": "mm_accelerator",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"rst_clk_wiz_0_100M": {"hier_name": "rst_clk_wiz_0_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"xlconcat_1": {"hier_name": "xlconcat_1",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_1": {"hier_name": "xlconstant_1",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:50.750
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:50.759
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Result: [null, {"axi_gpio_0_S_AXI": {"name": "axi_gpio_0",
+"base": "0x40000000",
+"high": "0x4000FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_uartlite_0_S_AXI": {"name": "axi_uartlite_0",
+"base": "0x40600000",
+"high": "0x4060FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"global_mon_0_s00_axi": {"name": "global_mon_0",
+"base": "0x44A00000",
+"high": "0x44A0FFFF",
+"size": "65536",
+"slaveintf": "s00_axi",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_cdma_0_S_AXI_LITE": {"name": "axi_cdma_0",
+"base": "0x44A10000",
+"high": "0x44A1FFFF",
+"size": "65536",
+"slaveintf": "S_AXI_LITE",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"mm_accelerator_0_s00_axi": {"name": "mm_accelerator_0",
+"base": "0x44A20000",
+"high": "0x44A2FFFF",
+"size": "65536",
+"slaveintf": "s00_axi",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr_SLMB_Mem": {"name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"base": "0x00000000",
+"high": "0x00007FFF",
+"size": "32768",
+"slaveintf": "SLMB",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem",
+"acctype": "",
+"tz": "",
+},
+"axi_bram_ctrl_0_S_AXI_Mem0": {"name": "axi_bram_ctrl_0",
+"base": "0xC0000000",
+"high": "0xC0001FFF",
+"size": "8192",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "3",
+"segment": "Mem0",
+"acctype": "",
+"tz": "",
+},
+"axi_bram_ctrl_1_S_AXI_Mem0": {"name": "axi_bram_ctrl_1",
+"base": "0xC2000000",
+"high": "0xC2001FFF",
+"size": "8192",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "3",
+"segment": "Mem0",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:50.792
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf mdm_1], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:50.795
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf mdm_1], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:50.831
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:50.894
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Result: [null, {"axi_bram_ctrl_0": {},
+"axi_bram_ctrl_1": {},
+"axi_cdma_0": {"CDMACR": {"description": "CDMA Control Register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "32",
+"fields": {"TailPntrEn": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates tail pointer mode is enabled to the SG Engine. This bit is fixed to 1 and always read as 1 when SG is included. If the CDMA is built with SG disabled (Simple Mode Only), the default value of the port is 0.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Reset": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Soft reset control for the AXI CDMA core. Setting this bit to a 1 causes the AXI CDMA to be reset. Reset is accomplished gracefully. Committed AXI4 transfers are then completed. Other queued transfers are flushed. After completion of a soft reset, all registers and bits are in the Reset State.  
+  0 - Reset NOT in progress  Normal operation      1 - Reset in progress
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"SGMode": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit controls the transfer mode of the CDMA. Setting this bit to a 1 causes the AXI CDMA to operate in a Scatter Gather mode if the Scatter Gather engine is included.   0 - Simple DMA Mode   1 - Scatter Gather Mode This bit must only be changed when the CDMA engine is idle (CDMASR.IDLE = 1). Changing the state of this bit at any other time has undefined results.
+This bit must be set to a 0 then back to 1 by the software application to force the CDMA SG engine to use a new value written to the CURDESC_PNTR register.
+This bit must be set prior to setting the CDMACR.Dly_IrqEn bit. Otherwise, the CDMACR.Dly_IrqEn bit does not get set.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Key_Hole_Read": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Writing 1 to this enables the keyhole read (FIXED address AXI transaction). This value should not be changed when a transfer is in progress. This value should remain constant until all the descriptors are processed (for SG = 1).
+CDMA shows unexpected behavior if this value is changed in the middle of a transfer. It is the responsibility of the slave device to enforce the functionality. When enabling Key Hole operation, the MAX BURST LENGTH should be set to 16.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Key_Hole_Write": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Writing 1 to this enables the keyhole write (FIXED address AXI transaction). This value should not be changed when a transfer is in progress. This value should remain constant until all the descriptors are processed (for SG = 1).
+CDMA shows unexpected behavior if this value is changed in the middle of a transfer. It is the responsibility of the slave device to enforce the functionality. When enabling Key Hole operation, the MAX BURST LENGTH should be set to 16.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Cyclic_BD_Enable": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "When set to 1, you can use the CDMA in Cyclic Buffer Descriptor (BD) mode without any user intervention. In this mode, the Scatter Gather module ignores the Completed bit of the BD. With this feature, you can use the same BDs in cyclic manner without worrying about any errors.
+This bit should be set before updating the TAILDESC register. Changing this bit while the transfer is in progress will generate undefined results.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"IOC_IrqEn": {"access": "read-write",
+"bit_offset": "12",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Complete Interrupt Enable. When set to 1, it allows CDMASR.IOC_Irq to generate an interrupt out for completed DMA transfers.   0 - IOC Interrupt disabled   1 - IOC Interrupt enabled.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Dly_IrqEn": {"access": "read-write",
+"bit_offset": "13",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Delay Timer Interrupt Enable. When set to 1, it allows CDMASR.Dly_Irq to generate an interrupt out. This is only used with Scatter Gather assisted transfers.     0 - Delay Interrupt disabled    1 - Delay Interrupt enabled.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Err_IrqEn": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Error Interrupt Enable. When set to 1, it allows the CDMASR.Err_Irq to generate an interrupt out.      0 - Error Interrupt disabled   1 - Error Interrupt enabled.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"IRQThreshold": {"access": "read-write",
+"bit_offset": "16",
+"bit_range": "",
+"bit_width": "8",
+"desc": "Interrupt Threshold. This value is used for setting the interrupt threshold. When IOC interrupt events occur, an internal counter counts down from the Interrupt Threshold setting. When the count reaches zero, an interrupt out is generated by the DMA engine.
+Note: The minimum setting for the threshold is 0x01. A write of 0x00 to this register has no effect.
+Note: This is irrelevant when Scatter Gather is excluded.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"IRQDelay": {"access": "read-write",
+"bit_offset": "24",
+"bit_range": "",
+"bit_width": "8",
+"desc": "Interrupt Delay Timeout. This value is used for setting the interrupt delay timeout value. The interrupt timeout is a mechanism for causing the CDMA engine to generate an interrupt after the delay time period has expired.
+Timer begins counting at the end of a packet and resets with the receipt of a new packet or a timeout event occurs.
+Note: Setting this value to zero disables the delay timer interrupt.
+Note: This is irrelevant when Scatter Gather is excluded.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"CDMASR": {"description": "CDMA Status Register",
+"address_offset": "0x04",
+"access": "read-write",
+"size": "32",
+"fields": {"Idle": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "CDMA Idle. Indicates the state of AXI CDMA operations.
+When set and in Simple DMA mode, the bit indicates the programmed transfer has completed and the CDMA is waiting for a new transfer to be programmed. Writing to the bytes to transfer (BTT) register in Simple DMA mode causes the CDMA to start (not Idle).
+When set and in SG mode, the bit indicates the SG Engine has reached the tail pointer for the associated channel and all queued descriptors have been processed. Writing to the tail pointer register automatically restarts CDMA SG operations.      0 - Not Idle  Simple or SG DMA operations are in progress.      1 - Idle  Simple or SG operations completed or not started.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"SGIncld": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "SG Included. This bit indicates if the AXI CDMA has been implemented with Scatter Gather support included. This is used by application software (drivers) to determine if SG Mode can be utilized.   0 - Scatter Gather not included. Only Simple DMA operations are supported.   1 - Scatter Gather is included. Both Simple DMA and Scatter Gather operations are supported.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"DMAIntErr": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "DMA Internal Error. This bit indicates that a internal error has been encountered by the DataMover on the data transport channel. This error can occur if a 0 value BTT (bytes to transfer) is fed to the AXI DataMover or DataMover has an internal processing error. A BTT of 0 only happens if the BTT register is written with zeros (in Simple DMA mode) or a BTT specified in the Control word of a fetched descriptor is set to 0 (SG Mode). This error condition causes the AXI CDMA to halt gracefully. The CDMASR.IDLE bit is set to 1 when the CDMA has completed shut down.
+CURDESC_PNTR register is updated with the descriptor pointer value when this error is detected.      0 - No CDMA Internal Errors.      1 - CDMA Internal Error detected. CDMA Engine halts.  A reset (soft or hard) must be issued to clear the error condition.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"DMASlvErr": {"access": "read-only",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "DMA Slave Error. This bit indicates that an AXI slave error response has been received by the AXI DataMover during an AXI transfer (read or write). This error condition causes the AXI CDMA to halt gracefully. The CDMASR.IDLE bit is set to 1 when the CDMA has completed shutdown. The CURDESC_PNTR register is updated with the descriptor pointer value when this error is detected.      0 - No CDMA Slave Errors.   1 - CDMA Slave Error detected. CDMA Engine halts.  A reset (soft or hard) must be issued to clear the error condition.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"DMADecErr": {"access": "read-only",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "DMA Decode Error. This bit indicates that an AXI decode error has been received by the AXI DataMover. This error occurs if the DataMover issues an address request to an invalid location.
+This error condition causes the AXI CDMA to halt gracefully. The CDMASR.IDLE bit is set to 1 when the CDMA has completed shut down. The CURDESC_PNTR register is updated with the descriptor pointer value when this error is detected.      0 - No CDMA Decode Errors.      1 - CDMA Decode Error detected. CDMA Engine halts.  A reset (soft or hard) must be issued to clear the error condition.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"SGIntErr": {"access": "read-only",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Scatter Gather Internal Error. This bit indicates that an internal error has been encountered by the SG Engine. This error condition causes the AXI CDMA to halt gracefully. The CDMASR.IDLE bit is set to 1 when the CDMA has completed shutdown. The CURDESC_PNTR register is updated with the descriptor pointer value when this error is detected.      0 - No SG Internal Errors      1 - SG Internal Error detected. CDMA Engine halts.  A reset (soft or hard) must be issued to clear the error condition.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"SGSlvEr": {"access": "read-only",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Scatter Gather Slave Error. This bit indicates that an AXI slave error response has been received by the SG Engine during an AXI transfer (transfer descriptor read or write). This error condition causes the AXI CDMA to halt gracefully. The CDMASR.IDLE bit is set to 1 when the CDMA has completed shut down. The CURDESC_PNTR register is updated with the descriptor pointer value when this error is detected.      0 - No SG Slave Errors      1 - SG Slave Error detected. CDMA Engine halts.  A reset (soft or hard) must be issued to clear the error condition.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"SGDecErr": {"access": "read-only",
+"bit_offset": "10",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Scatter Gather Decode Error. This bit indicates that an AXI decode error has been received by the SG Engine during an AXI transfer (transfer descriptor read or write). This error occurs if the SG Engine issues an address request to an invalid location. This error condition causes the AXI CDMA to gracefully halt. The CDMASR.IDLE bit is set to 1 when the CDMA has completed shut down. The CURDESC_PNTR register is updated with the descriptor pointer value when this error is detected.      0 - No SG Decode Errors      1 - SG Decode Error detected. CDMA Engine halts.  A reset (soft or hard) must be issued to clear the error condition.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"IOC_Irq": {"access": "read-write",
+"bit_offset": "12",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt on Complete. When set to 1, this bit indicates an interrupt event has been generated on completion of a DMA transfer (either a Simple or SG). If the corresponding enable bit is set (CDMACR.IOC_IrqEn = 1), an interrupt out is generated from the AXI CDMA.      0 - No IOC Interrupt      1 - IOC Interrupt active When operating in SG mode, the criteria specified by the interrupt threshold must also be met.  Writing a 1 to this bit will clear it.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Dly_Irq": {"access": "read-write",
+"bit_offset": "13",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt on Delay. When set to 1, this bit indicates an interrupt event has been generated on a delay timer timeout. If the corresponding enable bit is set (CDMACR.Dly_IrqEn = 1), an interrupt out is generated from the AXI CDMA.
+  0 - No Delay Interrupt      1 - Delay Interrupt active Writing a 1 to this bit will clear it. This bit is cleared whenever CDMACR.SGMode is set to 0
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Err_Irq": {"access": "read-write",
+"bit_offset": "14",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt on Error. When set to 1, this bit indicates an interrupt event has been generated due to an error condition. If the corresponding enable bit is set (CDMACR.Err_IrqEn = 1), an interrupt out is generated from the AXI CDMA.
+  0 - No error Interrupt      1 - Error interrupt active Writing a 1 to this bit will clear it.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"IRQThresholdSts": {"access": "read-only",
+"bit_offset": "16",
+"bit_range": "",
+"bit_width": "8",
+"desc": "Interrupt Threshold Status. This field reflects the current interrupt threshold value in the SG Engine.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RQDelaySts": {"access": "read-only",
+"bit_offset": "24",
+"bit_range": "",
+"bit_width": "8",
+"desc": "Interrupt Delay Time Status. This field reflects the current interrupt delay timer value in the SG Engine.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"CURDESC_PNTR": {"description": "CDMA Current Descriptor Pointer Register",
+"address_offset": "0x08",
+"access": "read-write",
+"size": "32",
+"fields": {"Current_Descriptor_Pointer": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "26",
+"desc": "Current Descriptor Pointer. Indicates the pointer of the current descriptor being worked on. This register must contain a pointer to a valid descriptor prior to writing to the TAILDESC_PTR register. Failure to do so results in an undefined operation by the CDMA.
+When the CDMA SG Engine is running (CDMASR.IDLE = 0), the CURDESC_PNTR register is updated by the SG Engine to reflect the starting address of the current descriptor being executed.
+On error detection, the CURDESC_PNTR register is updated to reflect the descriptor associated with the detected error.
+The register should only be written by the software application when the AXI CDMA is idle (CDMASR.IDLE = 1). Descriptor addresses written to this field must be aligned to 64-byte boundaries (sixteen 32-bit words).
+Examples are 0x00, 0x40, 0x80. Any other alignment has undefined results.
+This register is cleared when CDMACR.SGMode = 0.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"CURDESC_PNTR_MSB": {"description": "CDMA Current Descriptor Pointer Register",
+"address_offset": "0x0C",
+"access": "read-write",
+"size": "32",
+"fields": {"Current_Descriptor_Pointer": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Current Descriptor Pointer. Indicates the pointer of the current descriptor being worked on. This register must contain a pointer to a valid descriptor prior to writing to the TAILDESC_PTR register. Failure to do so results in an undefined operation by the CDMA.
+When the CDMA SG Engine is running (CDMASR.IDLE = 0), the CURDESC_PNTR register is updated by the SG Engine to reflect the starting address of the current descriptor being executed.
+On error detection, the CURDESC_PNTR register is updated to reflect the descriptor associated with the detected error.
+The register should only be written by the software application when the AXI CDMA is idle (CDMASR.IDLE = 1). Descriptor addresses written to this field must be aligned to 64-byte boundaries (sixteen 32-bit words).
+Examples are 0x00, 0x40, 0x80. Any other alignment has undefined results.
+This register is cleared when CDMACR.SGMode = 0.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TAILDESC_PNTR": {"description": "CDMA Tail Descriptor Pointer Register",
+"address_offset": "0x10",
+"access": "read-write",
+"size": "32",
+"fields": {"Tail_Descriptor_Pointer": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "26",
+"desc": "Tail Descriptor Pointer. Indicates pause pointer for descriptor chain execution. The AXI CDMA SG Engine pauses descriptor fetching after completing operations on the descriptor whose current descriptor pointer matches the tail descriptor pointer.
+When the AXI CDMA is in SG Mode and the address space is 32 bits (CDMACR.SGMode = 1), a write by the software application to the TAILDESC_PNTR register causes the AXI CDMA SG Engine to start fetching descriptors starting from the CURDESC_PNTR register value. If the SG engine is paused at a tail pointer pause point, the SG engine restarts descriptor execution at the next sequential transfer descriptor. If the AXI CDMA is not idle (CDMASR.IDLE = 0), writing to the TAILDESC_PNTR has no effect except to reposition the SG pause point.
+This register is cleared when CDMACR.SGMode = 0.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TAILDESC_PNTR_MSB": {"description": "CDMA Tail Descriptor Pointer Register",
+"address_offset": "0x14",
+"access": "read-write",
+"size": "32",
+"fields": {"Tail_Descriptor_Pointer": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Tail Descriptor Pointer. Indicates pause pointer for descriptor chain execution. The AXI CDMA SG Engine pauses descriptor fetching after completing operations on the descriptor whose current descriptor pointer matches the tail descriptor pointer.
+When the AXI CDMA is in SG Mode and the address space is 32 bits (CDMACR.SGMode = 1), a write by the software application to the TAILDESC_PNTR register causes the AXI CDMA SG Engine to start fetching descriptors starting from the CURDESC_PNTR register value. If the SG engine is paused at a tail pointer pause point, the SG engine restarts descriptor execution at the next sequential transfer descriptor. If the AXI CDMA is not idle (CDMASR.IDLE = 0), writing to the TAILDESC_PNTR has no effect except to reposition the SG pause point.
+This register is cleared when CDMACR.SGMode = 0.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"SA": {"description": "CDMA Source Address Register",
+"address_offset": "0x18",
+"access": "read-write",
+"size": "32",
+"fields": {"Source_Address": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Source Address Register. This register is used by Simple DMA operations (CDMACR.SGMode = 0) as the starting read address for DMA data transfers. The address value written can be at any byte offset.
+The software application should only write to this register when the AXI CDMA is idle (CDMASR.IDLE = 1).
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"SA_MSB": {"description": "CDMA Source Address Register",
+"address_offset": "0x1C",
+"access": "read-write",
+"size": "32",
+"fields": {"Source_Address": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Source Address Register. This register is used by Simple DMA operations (CDMACR.SGMode = 0) as the starting read address for DMA data transfers. The address value written can be at any byte offset.
+The software application should only write to this register when the AXI CDMA is idle (CDMASR.IDLE = 1).
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"DA": {"description": "CDMA Destination Address Register",
+"address_offset": "0x20",
+"access": "read-only",
+"size": "32",
+"fields": {"Destination_Address": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Destination Address Register. This register is used by Simple DMA operations as the starting write address for DMA data transfers. The address value written has restrictions relative to the Source Address and Data Realignment Engine (DRE) inclusion as follows.
+If DRE is not included in the AXI CDMA or the data width is 128 or 256 bits, then the address offset of the Destination address must match that of the Source Address register value. Offset is defined as that portion of a system address that is used to designate a byte position within a single data beat width. For example, a 32-bit data bus has four addressable byte positions within a single data beat (0, 1, 2, and 3). The portion of the address that designates these positions is the offset. The number of address bits used for the offset varies with the transfer bus data width.
+The software application should only write to this register when the AXI CDMA is idle (CDMASR.IDLE = 1).
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"DA_MSB": {"description": "CDMA Destination Address Register",
+"address_offset": "0x24",
+"access": "read-only",
+"size": "32",
+"fields": {"Destination_Address": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Destination Address Register. This register is used by Simple DMA operations as the starting write address for DMA data transfers. 
+The software application should only write to this register when the AXI CDMA is idle (CDMASR.IDLE = 1).
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"BTT": {"description": "CDMA Bytes To Transfer Register",
+"address_offset": "0x28",
+"access": "read-write",
+"size": "32",
+"fields": {"BTT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "23",
+"desc": "Bytes to Transfer. This register field is used for Simple DMA transfers and indicates the desired number of bytes to DMA from the Source Address to the Destination Address. A maximum of 8,388,607 bytes of data can be specified by this field for the associated transfer.
+Writing to the BTT register also initiates the Simple DMA transfer.
+Note: A value of zero (0) is not allowed and causes a DMA internal error to be set by AXI CDMA. The software application should only write to this register when the AXI CDMA is idle (CDMASR.IDLE = 1).
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
+"axi_gpio_0": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "4",
+"fields": {"Channel-1 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "4",
+"fields": {"Channel-1 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "4",
+"fields": {"Channel-2 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "4",
+"fields": {"Channel-2 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GIER": {"description": "Global Interrupt Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"fields": {"Global Interrupt Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 Interrupt Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 Interrupt Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
+"axi_uartlite_0": {"RX_FIFO": {"description": "Receive data FIFO",
+"address_offset": "0x0",
+"access": "read-only",
+"size": "32",
+"fields": {"RX_DATA": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Receive Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TX_FIFO": {"description": "Transmit data FIFO",
+"address_offset": "0x4",
+"access": "write-only",
+"size": "32",
+"fields": {"TX_DATA": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Transmit Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"CTRL_REG": {"description": "UART Lite control register",
+"address_offset": "0xC",
+"access": "write-only",
+"size": "32",
+"fields": {"RST_TXFIFO": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the transmit FIFO
+Writing a 1 to this bit position clears the transmit FIFO
+  0 - Do nothing
+  1 - Clear the transmit FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RST_RXFIFO": {"access": "write-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the receive FIFO
+Writing a 1 to this bit position clears the receive FIFO
+  0 - Do nothing
+  1 - Clear the receive FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Enable_Intr": {"access": "write-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable interrupt for the AXI UART Lite
+  0 - Disable interrupt signal
+  1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"STAT_REG": {"description": "UART Lite status register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "32",
+"fields": {"RX_FIFO_Valid_Data": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO has data.
+  0 - Receive FIFO is empty
+  1 - Receive FIFO has data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Full": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO is full.
+  0 - Receive FIFO is not full
+  1 - Receive FIFO is full
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is empty.
+  0 - Transmit FIFO is not empty
+  1 - Transmit FIFO is empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Full": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is full.
+  0 - Transmit FIFO is not full
+  1 - Transmit FIFO is full
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Intr_Enabled": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that interrupts is enabled.
+  0 - Interrupt is disabled
+  1 - Interrupt is enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Overrun_Error": {"access": "read-only",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a overrun error has occurred after the last time the status register was read. Overrun is when a new character has been received but the receive FIFO is full. The received character is ignored and not written into the receive FIFO. This bit is cleared when the status register is read.      0 - No overrun error has occurred      1 - Overrun error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Frame_Error": {"access": "read-only",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a frame error has occurred after the last time the status register was read. Frame error is defined as detection of a stop bit with the value 0. The receive character is ignored and not written to the receive FIFO. This bit is cleared when the status register is read.      0 - No frame error has occurred   1 - Frame error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Parity_Error": {"access": "read-only",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a parity error has occurred after the last time the status register was read. If the UART is configured without any parity handling, this bit is always 0. The received character is written into the receive FIFO. This bit is cleared when the status register is read.      0 - No parity error has occurred      1 - Parity error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
+"global_mon_0": {},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {},
+"mm_accelerator_0": {},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:59.027
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:59.034
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"microblaze_0": {"freertos901_xilinx_v1_1": {"name": "freertos901_xilinx",
+"version": "1.1",
+"desc": "FreeRTOS is a market leading open source RTOS",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/ThirdParty/bsp/freertos901_xilinx_v1_1",
+},
+"standalone_v6_5": {"name": "standalone",
+"version": "6.5",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/bsp/standalone_v6_5",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:59.050
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:59.052
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:59.056
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:59.057
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:59.058
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:59.059
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:59.060
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:59.060
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:59.070
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:59.071
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:59.071
+!MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:59.114
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"openamp_echo_test": {"userdefname": "OpenAMP echo-test",
+"description": " OpenAMP echo-test application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos901_xilinx standalone",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/openamp_echo_test",
+"os": "standalone",
+},
+"xilkernel_thread_demo": {"userdefname": "Xilkernel POSIX Threads Demo",
+"description": "This Xilkernel based application provides a simple example of how to create multiple POSIX threads and synchronize with them when they are complete. This example creates an initial master thread. The master thread creates 4 worker threads that go off to compute parts of a sum and return the partial sum as the result. The master thread accumulates the partial sums and prints the result. This example can serve as your starting point for your end application thread structure.",
+"supp_proc": "microblaze",
+"supp_os": "xilkernel",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/xilkernel_thread_demo",
+"os": "standalone",
+},
+"rsa_auth_app": {"userdefname": "RSA Authentication App",
+"description": "Used to RSA authenticate a user application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/rsa_auth_app",
+"os": "standalone",
+},
+"zynqmp_pmufw": {"userdefname": "ZynqMP PMU Firmware",
+"description": "Platform Management Unit Firmware for ZynqMP.",
+"supp_proc": "psu_pmu",
+"supp_os": "standalone",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/zynqmp_pmufw",
+"os": "standalone",
+},
+"hello_world": {"userdefname": "Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone xilkernel",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/hello_world",
+"os": "standalone",
+},
+"dhrystone": {"userdefname": "Dhrystone",
+"description": "Dhrystone synthetic benchmark program.",
+"supp_proc": "microblaze ps7_cortexa9",
+"supp_os": "standalone",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/dhrystone",
+"os": "standalone",
+},
+"mba_fs_boot": {"userdefname": "mba_fs_boot",
+"description": "fs-boot for microblaze by Xilinx Inc..",
+"supp_proc": "",
+"supp_os": "",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/mba_fs_boot",
+"os": "standalone",
+},
+"srec_spi_bootloader": {"userdefname": "SREC SPI Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory (SPI). This program assumes that you have an SREC image programmed into SPI flash already. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Update the serial_flash_family & serial_flash_interface in xilisf library in BSP settings!
+
+Don't forget to modify blconfig.h to reflect the offset where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/srec_spi_bootloader",
+"os": "standalone",
+},
+"freertos_hello_world": {"userdefname": "FreeRTOS Hello World",
+"description": " FreeRTOS Hello World application",
+"supp_proc": "psu_cortexr5 ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "freertos901_xilinx",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/freertos_hello_world",
+"os": "standalone",
+},
+"empty_application": {"userdefname": "Empty Application",
+"description": "A blank C project.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone xilkernel freertos901_xilinx",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/empty_application",
+"os": "standalone",
+},
+"ddr_self_refresh": {"userdefname": "DDR self refresh",
+"description": "This DDR self refresh application provides a simple demonstration of how to enter to/exit from DDR self refresh mode. This application runs on R5 out of TCM.",
+"supp_proc": "psu_cortexr5",
+"supp_os": "standalone",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/ddr_self_refresh",
+"os": "standalone",
+},
+"freertos_lwip_echo_server": {"userdefname": "FreeRTOS lwIP Echo Server",
+"description": "The FreeRTOS lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP) with FreeRTOS. This application sets up the board to use IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos901_xilinx",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/freertos_lwip_echo_server",
+"os": "standalone",
+},
+"peripheral_tests": {"userdefname": "Peripheral Tests",
+"description": "Simple test routines for all peripherals in the hardware.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 microblaze",
+"supp_os": "standalone xilkernel",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/peripheral_tests",
+"os": "standalone",
+},
+"zynqmp_fsbl": {"userdefname": "Zynq MP FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq Ultrascale+ MPSoC. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/SD/QSPI) to RAM (DDR) and takes A53/R5 out of reset.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/zynqmp_fsbl",
+"os": "standalone",
+},
+"srec_bootloader": {"userdefname": "SREC Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory. This program assumes that you have an SREC image programmed into BPI flash. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Don't forget to modify blconfig.h to reflect the physical address where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/srec_bootloader",
+"os": "standalone",
+},
+"zynq_dram_test": {"userdefname": "Zynq DRAM tests",
+"description": "This application runs out of OCM and performs memory tests and read/write eye measurements on Zynq DRAM.  For more information about the test, refer to ZYNQ_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/zynq_dram_test",
+"os": "standalone",
+},
+"memory_tests": {"userdefname": "Memory Tests",
+"description": "This application tests Memory Regions present in the hardware.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/memory_tests",
+"os": "standalone",
+},
+"libmetal_echo_demo": {"userdefname": "Libmetal AMP Demo",
+"description": "Libmetal AMP Application",
+"supp_proc": "psu_cortexr5",
+"supp_os": "freertos901_xilinx standalone",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/libmetal_echo_demo",
+"os": "standalone",
+},
+"zynq_fsbl": {"userdefname": "Zynq FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/NOR/QSPI) to RAM (DDR) and starts executing it.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/zynq_fsbl",
+"os": "standalone",
+},
+"openamp_matrix_multiply": {"userdefname": "OpenAMP matrix multiplication Demo",
+"description": " OpenAMP matrix multiplication application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos901_xilinx standalone",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/openamp_matrix_multiply",
+"os": "standalone",
+},
+"zynqmp_dram_test": {"userdefname": "Zynq MP DRAM tests",
+"description": "This application runs out of OCM and performs memory tests on Zynq MP DRAM.  For more information about the test, refer to ZYNQMP_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "psu_cortexa53",
+"supp_os": "standalone",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/zynqmp_dram_test",
+"os": "standalone",
+},
+"openamp_rpc_demo": {"userdefname": "OpenAMP RPC Demo",
+"description": " OpenAMP rpc-demo application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos901_xilinx standalone",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/openamp_rpc_demo",
+"os": "standalone",
+},
+"lwip_echo_server": {"userdefname": "lwIP Echo Server",
+"description": "The lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP). This application sets up the board to use IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps/lwip_echo_server",
+"os": "standalone",
+},
+"linux_empty_app": {"userdefname": "Linux Empty Application",
+"description": "A blank Linux C project.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "linux",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps_linux/linux_empty_app",
+"os": "linux",
+},
+"linux_hello_world": {"userdefname": "Linux Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "linux",
+"path": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/lib/sw_apps_linux/linux_hello_world",
+"os": "linux",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:59.117
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:59.135
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:59.137
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:59.151
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:59.984
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:10:59.985
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:00.069
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:00.071
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:00.195
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:00.196
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:00.307
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:00.308
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:03.057
+!MESSAGE XSCT Command: [::hsi::utils::write_sw_mss -hw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf -sw test_bsp -dir /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp -processor microblaze_0 -os standalone -app hello_world], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:03.074
+!MESSAGE XSCT command with result: [::hsi::utils::write_sw_mss -hw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf -sw test_bsp -dir /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp -processor microblaze_0 -os standalone -app hello_world], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:03.156
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:03.158
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:03.158
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:03.162
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:03.163
+!MESSAGE XSCT Command: [::hsi::utils::generate_bsp_sources /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:03.550
+!MESSAGE XSCT command with result: [::hsi::utils::generate_bsp_sources /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.871
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_REORDER_INSTR], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.872
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_REORDER_INSTR], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.873
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_ENDIANNESS], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.874
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_ENDIANNESS], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.875
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_BARREL], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.877
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_BARREL], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.877
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_PCMP_INSTR], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.878
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_PCMP_INSTR], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.879
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_DIV], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.882
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_DIV], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.883
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_FPU], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.884
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_FPU], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.885
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_HW_MUL], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.886
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_HW_MUL], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.887
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_AREA_OPTIMIZED], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.889
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_AREA_OPTIMIZED], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.893
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.895
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.895
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.897
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.897
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.898
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Result: [null, axi_bram_ctrl_0 axi_bram_ctrl_1 axi_cdma_0 axi_gpio_0 axi_uartlite_0 global_mon_0 microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr mm_accelerator_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.898
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.902
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Result: [null, {"axi_bram_ctrl_0": {"name": "bram",
+"ver": "4.2",
+},
+"axi_bram_ctrl_1": {"name": "bram",
+"ver": "4.2",
+},
+"axi_cdma_0": {"name": "axicdma",
+"ver": "4.3",
+},
+"axi_gpio_0": {"name": "gpio",
+"ver": "4.3",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.2",
+},
+"global_mon_0": {"name": "generic",
+"ver": "2.0",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"mm_accelerator_0": {"name": "mm_accelerator",
+"ver": "1.0",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.6",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.902
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.991
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"axi_bram_ctrl_0": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"bram_v4_2": {"name": "bram",
+"version": "4.2",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_bram_ctrl_1": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"bram_v4_2": {"name": "bram",
+"version": "4.2",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_bram_ctrl_2": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"bram_v4_2": {"name": "bram",
+"version": "4.2",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_cdma_0": {"version": "4.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"axicdma_v4_3": {"name": "axicdma",
+"version": "4.3",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/axicdma_v4_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_gpio_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"gpio_v4_3": {"name": "gpio",
+"version": "4.3",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/gpio_v4_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_interconnect_0": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"axi_uartlite_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartlite_v3_2": {"name": "uartlite",
+"version": "3.2",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"blk_mem_gen_0": {"version": "8.4",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"blk_mem_gen_1": {"version": "8.4",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"clk_wiz_0": {"version": "5.4",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"clk_wiz_v1_2": {"name": "clk_wiz",
+"version": "1.2",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/clk_wiz_v1_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"global_mon_0": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"mdm_1": {"version": "3.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartlite_v3_2": {"name": "uartlite",
+"version": "3.2",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0": {"version": "10.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"cpu_v2_6": {"name": "cpu",
+"version": "2.6",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_v2_6",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_axi_periph": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"bram_v4_2": {"name": "bram",
+"version": "4.2",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_local_memory_dlmb_v10": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"bram_v4_2": {"name": "bram",
+"version": "4.2",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_local_memory_ilmb_v10": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"microblaze_0_local_memory_lmb_bram": {"version": "8.4",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"mm_accelerator_0": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"drivers": {"name": "mm_accelerator",
+"version": "1.0",
+"repo": "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/drivers",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"rst_clk_wiz_0_100M": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"xlconcat_1": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"xlconstant_1": {"version": "1.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "/opt/Xilinx/SDK/2017.4/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.993
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.994
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.995
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.996
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.997
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:04.998
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.031
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.035
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.036
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.038
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.038
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.039
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.039
+!MESSAGE XSCT Command: [::hsi::utils::opensw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.041
+!MESSAGE XSCT command with result: [::hsi::utils::opensw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.041
+!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf -sw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss -app hello_world -processor microblaze_0 -os standalone -dir /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test/src], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.084
+!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf -sw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss -app hello_world -processor microblaze_0 -os standalone -dir /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test/src], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.444
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.446
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.446
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.448
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.477
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.481
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Result: [null, {"axi_bram_ctrl_0": {"name": "bram",
+"ver": "4.2",
+},
+"axi_bram_ctrl_1": {"name": "bram",
+"ver": "4.2",
+},
+"axi_cdma_0": {"name": "axicdma",
+"ver": "4.3",
+},
+"axi_gpio_0": {"name": "gpio",
+"ver": "4.3",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.2",
+},
+"global_mon_0": {"name": "generic",
+"ver": "2.0",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"mm_accelerator_0": {"name": "mm_accelerator",
+"ver": "1.0",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.6",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.555
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.557
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.558
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.559
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.571
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.572
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.606
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:05.611
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:06.459
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:06.461
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:06.461
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:06.463
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.5",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:06.475
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:06.477
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/design_1_wrapper_hw_platform_0/system.hdf /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:06.494
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-03-17 15:11:06.498
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/test_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:06.869
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.core.CommandLauncher.printCommandLine(CommandLauncher.java:287)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:250)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:07.398
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:07.412
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:07.414
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:07.425
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:07.427
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:07.433
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:07.443
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:07.450
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:07.463
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:07.469
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:07.479
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:07.485
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:07.495
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:07.501
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:07.508
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:07.513
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:07.518
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:07.590
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:07.607
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:07.612
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:07.622
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-17 15:11:08.292
+!MESSAGE Indexed 'test_bsp' (53 sources, 50 headers) in 1.59 sec: 1,584 declarations; 7,918 references; 30 unresolved inclusions; 3 syntax errors; 32 unresolved names (0.34%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-17 15:11:08.573
+!MESSAGE Indexed 'test' (2 sources, 45 headers) in 0.243 sec: 1,380 declarations; 2,318 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:08.590
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:08.595
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:08.598
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:08.636
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:08.641
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:08.642
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:08.840
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:08.845
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:08.845
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:09.057
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:09.062
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:09.062
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:09.235
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:09.239
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:09.240
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:09.544
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2021-03-17 15:11:09.580
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:160)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:68)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:98)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:193)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:259)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-03-23 11:14:51.137
+!MESSAGE Executed Webtalk command
