@@ -1,0 +1,177 @@
+#include "monitor.h"
+
+#ifdef IMPLEMENT_WITH_PRINTF
+
+#include "platform.h"
+
+#endif
+
+int main() {
+
+	// setto la base del global monitor in base_mon
+	unsigned int* base_mon = (unsigned int *) BASE_MON;
+
+	// metto a 0 registro controllo LMIC1
+	*(base_mon) = 0;
+
+	// metto in modalità 10 l'axi full sniffer (per inizializzarlo)
+	*(base_mon) = *(base_mon) | INIT_AXIFULL_SNIFF;
+
+	// setto i bordi del range
+	*(base_mon+3) = 0x0;
+	*(base_mon+3) = 0xFFFFFFFF;
+
+	// run degli sniffer e setto AXI full sniffer a 10
+	*(base_mon) = *(base_mon) | RUN_AXIFULL_SNIFF | RUN_CMD;
+
+
+	// microblaze writes in BRAM di lavoro
+	    int i;
+	    for(i=0;i<48;i++) {
+	    	if(i<16)
+	    		*(bram + i) = 1;
+	    	else if(i<32)
+	    		*(bram + i) = 10;
+	    	else
+	    		*(bram + i) = -1;
+	    }
+
+	    // decido indirizzi uscite in BRAM di lavoro
+	    int *data_dout_0 = (int *)( bram + 60);
+	    int *data_dout_1 = (int *)( bram + 70);
+	    int *data_dout_2 = (int *)( bram + 80);
+
+	// ora scrivo su acceleratori
+	    mm_accelerator_no_parallel(
+	    	1, data_dout_0,
+	    	1, data_dout_1,
+	    	1, data_dout_2,
+	    	48,bram
+	    	);
+
+
+#ifdef BUONA
+#ifdef IMPLEMENT_WITH_PRINTF
+	init_platform();
+	print("Hello World\n\r");
+#endif
+
+	unsigned int* base_mon = (unsigned int *) BASE_MON;
+	unsigned int* base_mem = (unsigned int *) BASE_MEM_TRACES;
+
+	int a, b, i;
+
+	*(base_mon) = 0; // initialize the control register with 0
+
+#ifdef IMPLEMENT_WITH_PRINTF
+	xil_printf("trace with AXI sniffer \n\r");
+#endif
+	jointer_initialize(base_mon, 0x24, 0x24); // set location displacement to be monitored to 0x24
+											  // so indicating that we must write to (base_mon+9)
+											  // to produce a timestamp
+
+	jointer_run(base_mon);
+
+	for (i = 0; i < N; i++) {
+		*(base_mon + 9) = i; // monitor
+	}
+
+	jointer_stop(base_mon);
+
+#ifdef IMPLEMENT_WITH_PRINTF
+	jointer_print_reg_ram(base_mon, base_mem);
+#endif
+
+#ifdef OTHER_TESTS
+	// Test the reset of output of sniffer MBTP
+#ifdef IMPLEMENT_WITH_PRINTF
+	xil_printf("reset only sniffer MBTP \n\r");
+#endif
+
+	*base_mon = 0x6; // (control=000110) soft reset of the monitor and set for the initialization sniffer 1
+
+#ifdef IMPLEMENT_WITH_PRINTF
+	jointer_print_reg_ram(base_mon, base_mem);
+#endif
+
+	// Test the initialized sniffer1 with run and stop with the two least significant bits
+#ifdef IMPLEMENT_WITH_PRINTF
+	xil_printf("run and stop sniffer MBTP \n\r");
+#endif
+
+	// Test2: Test the initialized sniffer1 with run and stop with the two least significant bits
+	*base_mon = 0x6; // (control=0110) soft reset of the monitor and set for the initialization sniffer 1
+	*base_mon = 0x4; // (control=0100) release soft reset and set for initialization
+	*(base_mon + 1) = 0; // low of the range of sniffer1
+	*(base_mon + 1) = 0xFFFFFFFF; // high of the range of sniffer1
+	*base_mon = 0x9; // (control=1001) run of the monitor and set of the working mode prog=10, monitor si avvia
+	// do some operations
+	a = 5;
+	b = 7;
+	a = a + b;
+	*base_mon = 0x8; // (control=1000) stop of the monitor keeping the working mode prog = 10, monitor si stoppa
+
+#ifdef IMPLEMENT_WITH_PRINTF
+
+	jointer_print_reg(base_mon);
+#endif
+
+
+
+	// Test3: Test the uninitialized sniffer with run and stop with the two least significant bits
+	*base_mon = 0x6;// (control=0110) soft reset of the monitor and set for the initialization sniffer 1
+	*base_mon = 0x9;// (control=1001) run of the monitor and set of the working mode prog=10, monitor si avvia
+	*base_mon = 0x8;// (control=1000) stop of the monitor keeping the working mode prog = 10, monitor si stoppa
+
+#ifdef IMPLEMENT_WITH_PRINTF
+
+	xil_printf("Test 3 \n\r");
+	xil_printf("Result is %x\n\r", *(base_mon + 3));
+	xil_printf("Result is %x\n\r", *(base_mon + 4));
+	xil_printf("Result is %x\n\r", *(base_mon + 5));
+
+#endif
+
+	// Test4: Test the initialized sniffer with run but stop with the swith to idle mode using prog
+	*base_mon = 0x6;// (control=0110) soft reset of the monitor and set for the initialization sniffer 1
+	*base_mon = 0x4;// (control=0100) release soft reset and set for initialization
+	*(base_mon+1)=0;// low of the range of sniffer1
+	*(base_mon+1)=0xFFFFFFFF;// high of the range of sniffer1
+	*base_mon = 0x9;// (control=1001) run of the monitor and set of the working mode prog=10, monitor si avvia
+	// do some operations
+	a=5;
+	b=7;
+	a=a+b;
+	*base_mon = 1;// (control=0001) run of the monitor, however switch mode for sniffer 1, so it becomes idle, monitor si stoppa
+
+#ifdef IMPLEMENT_WITH_PRINTF
+
+	xil_printf("Test 4 \n\r");
+	xil_printf("Result is %x\n\r", *(base_mon + 3));
+	xil_printf("Result is %x\n\r", *(base_mon + 4));
+	xil_printf("Result is %x\n\r", *(base_mon + 5));
+#endif
+
+// setting 11 for a sniffer with only event monitor is not allowed
+
+	//	*base_mon = 0x2; // (control=0010) soft-reset of the monitor and set of the working mode idle, monitor fermo
+	//
+	//	*base_mon = 0xD; // run of the monitor and set of the working mode prog=11 (control=1101)
+	//					// qui misura tra due transizioni di event_data_good e poi stop
+	//
+	//	a=5;
+	//	b=7;
+	//	a=a+b;
+	//
+	//	*base_mon = 0xC; // (control = 1100) stop of the monitor
+	//
+	//	*base_mon = 0xE; // (control = 1110) reset of the monitor
+#endif
+
+#ifdef IMPLEMENT_WITH_PRINTF
+	cleanup_platform();
+#endif
+#endif
+
+	return 0;
+}

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# 
+# Start of session at: Tue Mar 23 11:14:52 2021
+# Process ID: 32103
+# Current directory: /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/webtalk/webtalk.log
+# Journal file: /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

@@ -1,0 +1,46 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2017.4/bin/unwrapped/lnx64.o/xelab -wto 9273fc1491664942b5676599414ac225 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot global_mon_behav xil_defaultlib.global_mon -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.config
+Compiling package xil_defaultlib.common_pack
+Compiling architecture behavioral of entity xil_defaultlib.smart_counter [\smart_counter(dim_bit_g=14,incr...]
+Compiling architecture behavioral of entity xil_defaultlib.bram_writer [bram_writer_default]
+Compiling architecture arch_imp of entity xil_defaultlib.dci [dci_default]
+Compiling architecture behavioral of entity xil_defaultlib.eig_AXI [\eig_AXI(dim_event_g=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.smart_demux [smart_demux_default]
+Compiling architecture behavioral of entity xil_defaultlib.smart_counter [\smart_counter(dim_bit_g=1,incre...]
+Compiling architecture behavioral of entity xil_defaultlib.dispenser_dcapf [dispenser_dcapf_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux2to1 [mux2to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.event_data_manager [event_data_manager_default]
+Compiling architecture arc_comp_lt of entity xil_defaultlib.comp_prog [comp_prog_default]
+Compiling architecture behavioral of entity xil_defaultlib.filter [filter_default]
+Compiling architecture behavioral of entity xil_defaultlib.catcher [catcher_default]
+Compiling architecture behavioral of entity xil_defaultlib.pipo_reg [pipo_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.acknowledger_AXI [\acknowledger_AXI(ack_input_size...]
+Compiling architecture behavioral of entity xil_defaultlib.smart_counter [\smart_counter(increment_size_g=...]
+Compiling architecture behavioral of entity xil_defaultlib.time_monitor [\time_monitor(config_string="011...]
+Compiling architecture behavioral of entity xil_defaultlib.pipo_reg [\pipo_reg(size_g=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.init_dcapf [init_dcapf_default]
+Compiling architecture behavioral of entity xil_defaultlib.dcapf_AXI [\dcapf_AXI(config_string="01011"...]
+Compiling architecture behavioral of entity xil_defaultlib.aggregator_AXI [aggregator_axi_default]
+Compiling architecture behavioral of entity xil_defaultlib.sniffer_AXI [\sniffer_AXI(dim_event_g=32)\]
+Compiling architecture arc_comp_lt of entity xil_defaultlib.comp_prog [\comp_prog(dim_bus_g=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.eig_AXIfull [eig_axifull_default]
+Compiling architecture behavioral of entity xil_defaultlib.smart_counter [\smart_counter(dim_bit_g=32,incr...]
+Compiling architecture behavioral of entity xil_defaultlib.event_monitor [\event_monitor(incr_size_g=32,di...]
+Compiling architecture behavioral of entity xil_defaultlib.dcapf_axifull [\dcapf_axifull(incr_size_g=32,co...]
+Compiling architecture behavioral of entity xil_defaultlib.aggregator_AXIfull [aggregator_axifull_default]
+Compiling architecture behavioral of entity xil_defaultlib.sniffer_AXIfull [sniffer_axifull_default]
+Compiling architecture behavioral of entity xil_defaultlib.lmic1 [lmic1_default]
+Compiling architecture arch_imp of entity xil_defaultlib.global_mon
+Built simulation snapshot global_mon_behav

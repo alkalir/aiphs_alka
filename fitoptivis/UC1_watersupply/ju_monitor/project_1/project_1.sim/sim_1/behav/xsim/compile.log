@@ -1,0 +1,64 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/config.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/common_pack.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/acknowledger_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity acknowledger_AXI
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/aggregator_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity aggregator_AXI
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/aggregator_AXIfull.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity aggregator_AXIfull
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/aggregator_MBTP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity aggregator_MBTP
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/bram_writer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity bram_writer
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/catcher.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity catcher
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/comp_prog.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity comp_prog
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/dcapf_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dcapf_AXI
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/dcapf_axifull.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dcapf_axifull
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/dcapf_branch_taken.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dcapf_branch_taken
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/dci_old.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dci
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/dispenser_dcapf.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dispenser_dcapf
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/eig_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity eig_AXI
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/eig_AXIfull.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity eig_AXIfull
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/eig_MBTP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity eig_MBTP
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/event_data_manager.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_data_manager
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/event_monitor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_monitor
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/filter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity filter
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/init_dcapf.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity init_dcapf
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/lmic1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lmic1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/mux2to1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux2to1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/pipo_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity pipo_reg
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/smart_counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity smart_counter
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/smart_demux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity smart_demux
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/sniffer_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sniffer_AXI
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/sniffer_AXIfull.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sniffer_AXIfull
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/sniffer_MBTP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sniffer_MBTP
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/time_monitor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity time_monitor
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/timing_capturer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity timing_capturer
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/global_mon.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity global_mon
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/dci.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dci

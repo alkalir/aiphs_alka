@@ -1,0 +1,75 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+Block Memory Generator module mb_tb.dut.design_1_i.blk_mem_gen_0.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module mb_tb.dut.design_1_i.microblaze_0_local_memory.lmb_bram.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+blk_mem_gen_v8_4_1 collision detected at time: 227500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 232500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 237500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 242500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 247500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 252500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 257500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 262500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 267500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+Warning: [Unisim MMCME2_ADV-20] Input CLKIN1 period and attribute CLKIN1_PERIOD are not same. Instance mb_tb.dut.design_1_i.clk_wiz_0.inst.mmcm_adv_inst 
+blk_mem_gen_v8_4_1 collision detected at time: 272500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 277500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 282500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 287500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 292500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 297500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 302500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 307500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 312500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 317500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 322500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 327500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 332500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 337500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 342500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 347500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 352500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 357500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 362500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 367500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 372500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 377500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 382500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 387500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 392500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 397500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 402500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 407500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 412500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 417500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 422500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 427500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 432500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 437500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 442500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 447500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 452500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 457500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 462500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 467500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 472500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 477500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 482500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 487500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 492500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 497500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 502500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 507500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 512500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 517500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 522500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 527500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 532500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 537500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 542500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 547500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 552500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 557500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 562500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 567500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0

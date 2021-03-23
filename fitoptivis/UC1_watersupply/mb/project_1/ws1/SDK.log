@@ -1,0 +1,6 @@
+15:10:41 INFO  : Registering command handlers for SDK TCF services
+15:10:45 INFO  : Launching XSCT server: xsct -n -interactive /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ws1/temp_xsdb_launch_script.tcl
+15:10:47 INFO  : XSCT server has started successfully.
+15:10:47 INFO  : Successfully done setting XSCT server connection channel  
+15:10:47 INFO  : Successfully done setting SDK workspace  
+15:10:47 INFO  : Processing command line option -hwspec /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/esp1/design_1_wrapper.hdf.

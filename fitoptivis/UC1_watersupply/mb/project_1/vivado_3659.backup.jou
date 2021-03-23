@@ -1,0 +1,94 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Mar 15 16:39:43 2021
+# Process ID: 3659
+# Current directory: /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1
+# Command line: vivado
+# Log file: /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/vivado.log
+# Journal file: /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+connect_bd_net [get_bd_pins global_mon_0/uclk] [get_bd_pins clk_wiz_0/clk_out1]
+connect_bd_net [get_bd_pins microblaze_0/Trace_Valid_Instr] [get_bd_pins global_mon_0/utrace_valid_instr]
+connect_bd_net [get_bd_pins global_mon_0/utrace_PC] [get_bd_pins microblaze_0/Trace_PC]
+save_bd_design
+connect_bd_net -net Net [get_bd_pins axi_cdma_0/m_axi_awready] [get_bd_pins axi_interconnect_0/S00_AXI_awready] [get_bd_pins global_mon_0/awrite_ready]
+connect_bd_net -net Net1 [get_bd_pins axi_cdma_0/m_axi_bresp] [get_bd_pins axi_interconnect_0/S00_AXI_bresp] [get_bd_pins global_mon_0/bwrite_resp]
+connect_bd_net -net Net2 [get_bd_pins axi_cdma_0/m_axi_bvalid] [get_bd_pins axi_interconnect_0/S00_AXI_bvalid] [get_bd_pins global_mon_0/bwrite_valid]
+connect_bd_net -net axi_cdma_0_m_axi_awaddr [get_bd_pins axi_cdma_0/m_axi_awaddr] [get_bd_pins axi_interconnect_0/S00_AXI_awaddr] [get_bd_pins global_mon_0/awrite_addr]
+connect_bd_net -net axi_cdma_0_m_axi_awburst [get_bd_pins axi_cdma_0/m_axi_awburst] [get_bd_pins axi_interconnect_0/S00_AXI_awburst] [get_bd_pins global_mon_0/awrite_burst]
+connect_bd_net -net axi_cdma_0_m_axi_awlen [get_bd_pins axi_cdma_0/m_axi_awlen] [get_bd_pins axi_interconnect_0/S00_AXI_awlen] [get_bd_pins global_mon_0/awrite_len]
+connect_bd_net -net axi_cdma_0_m_axi_awvalid [get_bd_pins axi_cdma_0/m_axi_awvalid] [get_bd_pins axi_interconnect_0/S00_AXI_awvalid] [get_bd_pins global_mon_0/awrite_valid]
+connect_bd_net -net axi_cdma_0_m_axi_bready [get_bd_pins axi_cdma_0/m_axi_bready] [get_bd_pins axi_interconnect_0/S00_AXI_bready] [get_bd_pins global_mon_0/bwrite_ready]
+connect_bd_net -net axi_cdma_0_m_axi_wlast [get_bd_pins axi_cdma_0/m_axi_wlast] [get_bd_pins axi_interconnect_0/S00_AXI_wlast] [get_bd_pins global_mon_0/write_last]
+connect_bd_net -net axi_cdma_0_m_axi_wstrb [get_bd_pins axi_cdma_0/m_axi_wstrb] [get_bd_pins axi_interconnect_0/S00_AXI_wstrb] [get_bd_pins global_mon_0/write_strb]
+connect_bd_net -net axi_cdma_0_m_axi_wvalid [get_bd_pins axi_cdma_0/m_axi_wvalid] [get_bd_pins axi_interconnect_0/S00_AXI_wvalid] [get_bd_pins global_mon_0/write_valid]
+connect_bd_net -net axi_interconnect_0_S00_AXI_wready [get_bd_pins axi_cdma_0/m_axi_wready] [get_bd_pins axi_interconnect_0/S00_AXI_wready] [get_bd_pins global_mon_0/write_ready]
+save_bd_design
+open_bd_design {/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+reset_simulation -simset sim_1 -mode behavioral
+set_property  ip_repo_paths  /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/other/mm_accelerator} [current_project]
+update_ip_catalog
+reset_simulation -simset sim_1 -mode behavioral
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name global_mon_v1_0_project -directory /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.tmp/global_mon_v1_0_project /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:global_mon:1.0 [get_ips  design_1_global_mon_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_global_mon_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name global_mon_v1_0_project -directory /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.tmp/global_mon_v1_0_project /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:global_mon:1.0 [get_ips  design_1_global_mon_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_global_mon_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+validate_bd_design
+report_ip_status -name ip_status 
+close_project
+open_project /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+validate_bd_design
+save_bd_design
+generate_target all [get_files  /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files -ipstatic_source_dir /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.cache/compile_simlib/modelsim} {questa=/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.cache/compile_simlib/questa} {ies=/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.cache/compile_simlib/ies} {vcs=/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.cache/compile_simlib/vcs} {riviera=/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+file mkdir /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sdk
+write_hwdef -force  -file /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sdk/design_1_wrapper.hdf
+launch_sdk -workspace /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sdk -hwspec /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sdk/design_1_wrapper.hdf
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/other/microblaze_on_arty/project_1.srcs/sim_1/new/mb_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+add_files -fileset sim_1 -norecurse /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sdk/test/Debug/test.elf
+set_property SCOPED_TO_REF design_1 [get_files -all -of_objects [get_fileset sim_1] {/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sdk/test/Debug/test.elf}]
+set_property SCOPED_TO_CELLS { microblaze_0 } [get_files -all -of_objects [get_fileset sim_1] {/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sdk/test/Debug/test.elf}]
+launch_simulation
+source mb_tb.tcl
+run 30 us
+save_wave_config {/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/mb_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/mb_tb_behav.wcfg
+set_property xsim.view /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/mb_tb_behav.wcfg [get_filesets sim_1]
+close_sim

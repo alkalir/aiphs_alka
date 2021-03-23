@@ -1,0 +1,37 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../hdl_srcs/config.vhd" \
+"../../../../../hdl_srcs/common_pack.vhd" \
+"../../../../../hdl_srcs/acknowledger_AXI.vhd" \
+"../../../../../hdl_srcs/aggregator_AXI.vhd" \
+"../../../../../hdl_srcs/aggregator_AXIfull.vhd" \
+"../../../../../hdl_srcs/aggregator_MBTP.vhd" \
+"../../../../../hdl_srcs/bram_writer.vhd" \
+"../../../../../hdl_srcs/catcher.vhd" \
+"../../../../../hdl_srcs/comp_prog.vhd" \
+"../../../../../hdl_srcs/dcapf_AXI.vhd" \
+"../../../../../hdl_srcs/dcapf_axifull.vhd" \
+"../../../../../hdl_srcs/dcapf_branch_taken.vhd" \
+"../../../../../hdl_srcs/dci.vhd" \
+"../../../../../hdl_srcs/dispenser_dcapf.vhd" \
+"../../../../../hdl_srcs/eig_AXI.vhd" \
+"../../../../../hdl_srcs/eig_AXIfull.vhd" \
+"../../../../../hdl_srcs/eig_MBTP.vhd" \
+"../../../../../hdl_srcs/event_data_manager.vhd" \
+"../../../../../hdl_srcs/event_monitor.vhd" \
+"../../../../../hdl_srcs/filter.vhd" \
+"../../../../../hdl_srcs/init_dcapf.vhd" \
+"../../../../../hdl_srcs/lmic1.vhd" \
+"../../../../../hdl_srcs/mux2to1.vhd" \
+"../../../../../hdl_srcs/pipo_reg.vhd" \
+"../../../../../hdl_srcs/smart_counter.vhd" \
+"../../../../../hdl_srcs/smart_demux.vhd" \
+"../../../../../hdl_srcs/sniffer_AXI.vhd" \
+"../../../../../hdl_srcs/sniffer_AXIfull.vhd" \
+"../../../../../hdl_srcs/sniffer_MBTP.vhd" \
+"../../../../../hdl_srcs/time_monitor.vhd" \
+"../../../../../hdl_srcs/timing_capturer.vhd" \
+"../../../../../hdl_srcs/global_mon.vhd" \
+
+# Do not sort compile order
+nosort

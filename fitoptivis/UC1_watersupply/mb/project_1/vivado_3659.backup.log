@@ -1,0 +1,1088 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Mar 15 16:39:43 2021
+# Process ID: 3659
+# Current directory: /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1
+# Command line: vivado
+# Log file: /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/vivado.log
+# Journal file: /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/mm_accelerator'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/mm_accelerator'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_mm_accelerator_0_0
+
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 6141.844 ; gain = 91.352 ; free physical = 13144 ; free virtual = 15577
+update_compile_order -fileset sources_1
+open_bd_design {/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_0
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_1
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_2
+Adding cell -- xilinx.com:ip:axi_cdma:4.1 - axi_cdma_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_1
+Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:microblaze:10.0 - microblaze_0
+Adding cell -- user.org:user:mm_accelerator:1.0 - mm_accelerator_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_100M
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- user.org:user:global_mon:1.0 - global_mon_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /global_mon_0/rsta_ram(undef) and /blk_mem_gen_1/rsta(rst)
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Successfully read diagram <design_1> from BD file </home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 6283.750 ; gain = 101.441 ; free physical = 12592 ; free virtual = 15376
+connect_bd_net [get_bd_pins global_mon_0/uclk] [get_bd_pins clk_wiz_0/clk_out1]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /global_mon_0/uclk(undef)
+connect_bd_net [get_bd_pins microblaze_0/Trace_Valid_Instr] [get_bd_pins global_mon_0/utrace_valid_instr]
+WARNING: [BD 41-1306] The connection to interface pin /microblaze_0/Trace_Valid_Instr is being overridden by the user. This pin will not be connected as a part of interface connection TRACE
+connect_bd_net [get_bd_pins global_mon_0/utrace_PC] [get_bd_pins microblaze_0/Trace_PC]
+WARNING: [BD 41-1306] The connection to interface pin /microblaze_0/Trace_PC is being overridden by the user. This pin will not be connected as a part of interface connection TRACE
+save_bd_design
+Wrote  : </home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+connect_bd_net -net Net [get_bd_pins axi_cdma_0/m_axi_awready] [get_bd_pins axi_interconnect_0/S00_AXI_awready] [get_bd_pins global_mon_0/awrite_ready]
+WARNING: [BD 41-1306] The connection to interface pin /axi_cdma_0/m_axi_awready is being overridden by the user. This pin will not be connected as a part of interface connection M_AXI
+WARNING: [BD 41-1306] The connection to interface pin /axi_interconnect_0/S00_AXI_awready is being overridden by the user. This pin will not be connected as a part of interface connection S00_AXI
+connect_bd_net -net Net1 [get_bd_pins axi_cdma_0/m_axi_bresp] [get_bd_pins axi_interconnect_0/S00_AXI_bresp] [get_bd_pins global_mon_0/bwrite_resp]
+WARNING: [BD 41-1306] The connection to interface pin /axi_cdma_0/m_axi_bresp is being overridden by the user. This pin will not be connected as a part of interface connection M_AXI
+WARNING: [BD 41-1306] The connection to interface pin /axi_interconnect_0/S00_AXI_bresp is being overridden by the user. This pin will not be connected as a part of interface connection S00_AXI
+connect_bd_net -net Net2 [get_bd_pins axi_cdma_0/m_axi_bvalid] [get_bd_pins axi_interconnect_0/S00_AXI_bvalid] [get_bd_pins global_mon_0/bwrite_valid]
+WARNING: [BD 41-1306] The connection to interface pin /axi_cdma_0/m_axi_bvalid is being overridden by the user. This pin will not be connected as a part of interface connection M_AXI
+WARNING: [BD 41-1306] The connection to interface pin /axi_interconnect_0/S00_AXI_bvalid is being overridden by the user. This pin will not be connected as a part of interface connection S00_AXI
+connect_bd_net -net axi_cdma_0_m_axi_awaddr [get_bd_pins axi_cdma_0/m_axi_awaddr] [get_bd_pins axi_interconnect_0/S00_AXI_awaddr] [get_bd_pins global_mon_0/awrite_addr]
+WARNING: [BD 41-1306] The connection to interface pin /axi_cdma_0/m_axi_awaddr is being overridden by the user. This pin will not be connected as a part of interface connection M_AXI
+WARNING: [BD 41-1306] The connection to interface pin /axi_interconnect_0/S00_AXI_awaddr is being overridden by the user. This pin will not be connected as a part of interface connection S00_AXI
+connect_bd_net -net axi_cdma_0_m_axi_awburst [get_bd_pins axi_cdma_0/m_axi_awburst] [get_bd_pins axi_interconnect_0/S00_AXI_awburst] [get_bd_pins global_mon_0/awrite_burst]
+WARNING: [BD 41-1306] The connection to interface pin /axi_cdma_0/m_axi_awburst is being overridden by the user. This pin will not be connected as a part of interface connection M_AXI
+WARNING: [BD 41-1306] The connection to interface pin /axi_interconnect_0/S00_AXI_awburst is being overridden by the user. This pin will not be connected as a part of interface connection S00_AXI
+connect_bd_net -net axi_cdma_0_m_axi_awlen [get_bd_pins axi_cdma_0/m_axi_awlen] [get_bd_pins axi_interconnect_0/S00_AXI_awlen] [get_bd_pins global_mon_0/awrite_len]
+WARNING: [BD 41-1306] The connection to interface pin /axi_cdma_0/m_axi_awlen is being overridden by the user. This pin will not be connected as a part of interface connection M_AXI
+WARNING: [BD 41-1306] The connection to interface pin /axi_interconnect_0/S00_AXI_awlen is being overridden by the user. This pin will not be connected as a part of interface connection S00_AXI
+connect_bd_net -net axi_cdma_0_m_axi_awvalid [get_bd_pins axi_cdma_0/m_axi_awvalid] [get_bd_pins axi_interconnect_0/S00_AXI_awvalid] [get_bd_pins global_mon_0/awrite_valid]
+WARNING: [BD 41-1306] The connection to interface pin /axi_cdma_0/m_axi_awvalid is being overridden by the user. This pin will not be connected as a part of interface connection M_AXI
+WARNING: [BD 41-1306] The connection to interface pin /axi_interconnect_0/S00_AXI_awvalid is being overridden by the user. This pin will not be connected as a part of interface connection S00_AXI
+connect_bd_net -net axi_cdma_0_m_axi_bready [get_bd_pins axi_cdma_0/m_axi_bready] [get_bd_pins axi_interconnect_0/S00_AXI_bready] [get_bd_pins global_mon_0/bwrite_ready]
+WARNING: [BD 41-1306] The connection to interface pin /axi_cdma_0/m_axi_bready is being overridden by the user. This pin will not be connected as a part of interface connection M_AXI
+WARNING: [BD 41-1306] The connection to interface pin /axi_interconnect_0/S00_AXI_bready is being overridden by the user. This pin will not be connected as a part of interface connection S00_AXI
+connect_bd_net -net axi_cdma_0_m_axi_wlast [get_bd_pins axi_cdma_0/m_axi_wlast] [get_bd_pins axi_interconnect_0/S00_AXI_wlast] [get_bd_pins global_mon_0/write_last]
+WARNING: [BD 41-1306] The connection to interface pin /axi_cdma_0/m_axi_wlast is being overridden by the user. This pin will not be connected as a part of interface connection M_AXI
+WARNING: [BD 41-1306] The connection to interface pin /axi_interconnect_0/S00_AXI_wlast is being overridden by the user. This pin will not be connected as a part of interface connection S00_AXI
+connect_bd_net -net axi_cdma_0_m_axi_wstrb [get_bd_pins axi_cdma_0/m_axi_wstrb] [get_bd_pins axi_interconnect_0/S00_AXI_wstrb] [get_bd_pins global_mon_0/write_strb]
+WARNING: [BD 41-1306] The connection to interface pin /axi_cdma_0/m_axi_wstrb is being overridden by the user. This pin will not be connected as a part of interface connection M_AXI
+WARNING: [BD 41-1306] The connection to interface pin /axi_interconnect_0/S00_AXI_wstrb is being overridden by the user. This pin will not be connected as a part of interface connection S00_AXI
+connect_bd_net -net axi_cdma_0_m_axi_wvalid [get_bd_pins axi_cdma_0/m_axi_wvalid] [get_bd_pins axi_interconnect_0/S00_AXI_wvalid] [get_bd_pins global_mon_0/write_valid]
+WARNING: [BD 41-1306] The connection to interface pin /axi_cdma_0/m_axi_wvalid is being overridden by the user. This pin will not be connected as a part of interface connection M_AXI
+WARNING: [BD 41-1306] The connection to interface pin /axi_interconnect_0/S00_AXI_wvalid is being overridden by the user. This pin will not be connected as a part of interface connection S00_AXI
+connect_bd_net -net axi_interconnect_0_S00_AXI_wready [get_bd_pins axi_cdma_0/m_axi_wready] [get_bd_pins axi_interconnect_0/S00_AXI_wready] [get_bd_pins global_mon_0/write_ready]
+WARNING: [BD 41-1306] The connection to interface pin /axi_cdma_0/m_axi_wready is being overridden by the user. This pin will not be connected as a part of interface connection M_AXI
+WARNING: [BD 41-1306] The connection to interface pin /axi_interconnect_0/S00_AXI_wready is being overridden by the user. This pin will not be connected as a part of interface connection S00_AXI
+save_bd_design
+Wrote  : </home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+open_bd_design {/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+reset_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property  ip_repo_paths  /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property  ip_repo_paths  {/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/other/mm_accelerator} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/other/mm_accelerator'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+reset_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name global_mon_v1_0_project -directory /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.tmp/global_mon_v1_0_project /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/other/mm_accelerator'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 6390.801 ; gain = 16.793 ; free physical = 12408 ; free virtual = 15203
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'axi_data_width' by 32 for port or parameter 'C_S00_AXI_DATA_WIDTH'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'axi_addr_width' by 6 for port or parameter 'C_S00_AXI_ADDR_WIDTH'
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor'
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:global_mon:1.0 [get_ips  design_1_global_mon_0_0] -log ip_upgrade.log
+Upgrading '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_global_mon_0_0 (global_mon_v1_0 1.0) from revision 2 to revision 3
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /global_mon_0_upgraded_ipi/uclk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_1/rsta(rst) and /global_mon_0_upgraded_ipi/rsta_ram(undef)
+Wrote  : </home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_global_mon_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name global_mon_v1_0_project -directory /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.tmp/global_mon_v1_0_project /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor/hdl_srcs/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/other/mm_accelerator'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 6454.688 ; gain = 0.000 ; free physical = 12394 ; free virtual = 15199
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'axi_data_width' by 32 for port or parameter 'C_S00_AXI_DATA_WIDTH'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'axi_addr_width' by 6 for port or parameter 'C_S00_AXI_ADDR_WIDTH'
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor'
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:global_mon:1.0 [get_ips  design_1_global_mon_0_0] -log ip_upgrade.log
+Upgrading '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_global_mon_0_0 (global_mon_v1_0 1.0) from revision 3 to revision 4
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /global_mon_0_upgraded_ipi/uclk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /blk_mem_gen_1/rsta(rst) and /global_mon_0_upgraded_ipi/rsta_ram(undef)
+Wrote  : </home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_global_mon_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+validate_bd_design
+ERROR: [BD 5-336] This command cannot be run, as the BD-design is locked. Locked reason(s):
+* Block design contains locked IPs. Please run report_ip_status for more details and recommendations on how to fix this issue. 
+List of locked IPs: 
+design_1_mm_accelerator_0_0
+
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+report_ip_status -name ip_status 
+close_project
+open_project /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/ju_monitor'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/other/mm_accelerator'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 6483.477 ; gain = 0.000 ; free physical = 12438 ; free virtual = 15244
+update_compile_order -fileset sources_1
+open_bd_design {/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_0
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_1
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_2
+Adding cell -- xilinx.com:ip:axi_cdma:4.1 - axi_cdma_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_1
+Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:microblaze:10.0 - microblaze_0
+Adding cell -- user.org:user:mm_accelerator:1.0 - mm_accelerator_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_0_100M
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding cell -- user.org:user:global_mon:1.0 - global_mon_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /global_mon_0/uclk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /global_mon_0/rsta_ram(undef) and /blk_mem_gen_1/rsta(rst)
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Successfully read diagram <design_1> from BD file </home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 6483.477 ; gain = 0.000 ; free physical = 12329 ; free virtual = 15135
+validate_bd_design
+WARNING: [BD 41-927] Following properties on pin /global_mon_0/s00_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+WARNING: [BD 41-1271] The connection to the pin: /axi_cdma_0/m_axi_wvalid has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_interconnect_0/S00_AXI_wready has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_interconnect_0/S00_AXI_bresp has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_interconnect_0/S00_AXI_bvalid has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_cdma_0/m_axi_awlen has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_cdma_0/m_axi_bready has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_cdma_0/m_axi_wstrb has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_cdma_0/m_axi_awvalid has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_cdma_0/m_axi_wlast has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_cdma_0/m_axi_awaddr has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_cdma_0/m_axi_awburst has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_interconnect_0/S00_AXI_awready has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/global_mon_0/utrace_opcode
+/global_mon_0/utrace_PID_reg
+/global_mon_0/utrace_jump_taken
+/global_mon_0/utrace_icachehit
+/global_mon_0/utrace_dcachehit
+/global_mon_0/utrace_icachereq
+/global_mon_0/utrace_dcachereq
+
+validate_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6483.477 ; gain = 0.000 ; free physical = 12327 ; free virtual = 15137
+save_bd_design
+Wrote  : </home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+generate_target all [get_files  /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-1271] The connection to the pin: /axi_cdma_0/m_axi_wvalid has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_interconnect_0/S00_AXI_wready has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_interconnect_0/S00_AXI_bresp has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_interconnect_0/S00_AXI_bvalid has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_cdma_0/m_axi_awlen has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_cdma_0/m_axi_bready has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_cdma_0/m_axi_wstrb has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_cdma_0/m_axi_awvalid has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_cdma_0/m_axi_wlast has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_cdma_0/m_axi_awaddr has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_cdma_0/m_axi_awburst has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+WARNING: [BD 41-1271] The connection to the pin: /axi_interconnect_0/S00_AXI_awready has been overridden by the user. This pin will not be connected as a part of the interface connection: axi_cdma_0_M_AXI 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/global_mon_0/utrace_opcode
+/global_mon_0/utrace_PID_reg
+/global_mon_0/utrace_jump_taken
+/global_mon_0/utrace_icachehit
+/global_mon_0/utrace_dcachehit
+/global_mon_0/utrace_icachereq
+/global_mon_0/utrace_dcachereq
+
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to net 'axi_bram_ctrl_1_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_2_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+VHDL Output written to : /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addrb'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_1/addrb'(32) to net 'axi_bram_ctrl_1_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_2_BRAM_PORTA_ADDR'(13) - Only lower order bits will be connected.
+VHDL Output written to : /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_cdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mm_accelerator_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block global_mon_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m06_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_pc .
+Exporting to file /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files -ipstatic_source_dir /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.cache/compile_simlib/modelsim} {questa=/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.cache/compile_simlib/questa} {ies=/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.cache/compile_simlib/ies} {vcs=/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.cache/compile_simlib/vcs} {riviera=/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+file mkdir /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sdk
+write_hwdef -force  -file /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sdk/design_1_wrapper.hdf
+launch_sdk -workspace /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sdk -hwspec /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sdk -hwspec /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/other/microblaze_on_arty/project_1.srcs/sim_1/new/mb_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+add_files -fileset sim_1 -norecurse /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sdk/test/Debug/test.elf
+set_property SCOPED_TO_REF design_1 [get_files -all -of_objects [get_fileset sim_1] {/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sdk/test/Debug/test.elf}]
+set_property SCOPED_TO_CELLS { microblaze_0 } [get_files -all -of_objects [get_fileset sim_1] {/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sdk/test/Debug/test.elf}]
+launch_simulation
+Generating merged BMM file for the design top 'mb_tb'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'mb_tb'...
+Generating merged BMM file for the design top 'mb_tb'...
+INFO: [SIM-utils-54] Inspecting design source files for 'mb_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj mb_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_1_0/sim/design_1_blk_mem_gen_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_blk_mem_gen_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/axi_full_ipif.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module S01_AXI_ipif
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/back_end.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module back_end
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/config_regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module config_registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/configurator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module configurator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/front_end.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module front_end
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/local_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module local_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/multi_dataflow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multi_dataflow
+WARNING: [VRFC 10-1315] redeclaration of ansi port count_data is not allowed [/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/multi_dataflow.v:492]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/sbox1x2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox1x2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/sbox2x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox2x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/mm_accelerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mm_accelerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_mm_accelerator_0_0/sim/design_1_mm_accelerator_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_mm_accelerator_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_xlconcat_1_0/sim/design_1_xlconcat_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlconcat_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_xlconstant_1_0/sim/design_1_xlconstant_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlconstant_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_lmb_bram_0/sim/design_1_lmb_bram_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_lmb_bram_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_xbar_1/sim/design_1_xbar_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xbar_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xbar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_auto_pc_1/sim/design_1_auto_pc_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_auto_pc_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+xvhdl --incr --relax -prj mb_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/sim/design_1_axi_bram_ctrl_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_axi_bram_ctrl_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_axi_bram_ctrl_1_0/sim/design_1_axi_bram_ctrl_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_axi_bram_ctrl_1_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_axi_bram_ctrl_2_0/sim/design_1_axi_bram_ctrl_2_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_axi_bram_ctrl_2_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_axi_cdma_0_0/sim/design_1_axi_cdma_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_axi_cdma_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_axi_gpio_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_axi_uartlite_0_0/sim/design_1_axi_uartlite_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_axi_uartlite_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_mdm_1_0/sim/design_1_mdm_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_mdm_1_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_microblaze_0_0/sim/design_1_microblaze_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_microblaze_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/lib/caph/data_types.vhd" into library caph
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/lib/caph/caph.vhd" into library caph
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/adder_act.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity adder
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/lib/caph/fifo_big.vhd" into library caph
+INFO: [VRFC 10-307] analyzing entity sync_ram
+INFO: [VRFC 10-307] analyzing entity fifo_big
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/forward_act.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity forward
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/mac_16_act.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mac_16
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/mac_8_act.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mac_8
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/splitter_act.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity splitter
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/sim/design_1_rst_clk_wiz_0_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_rst_clk_wiz_0_100M_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/sim/design_1_dlmb_bram_if_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_dlmb_bram_if_cntlr_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_dlmb_v10_0/sim/design_1_dlmb_v10_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_dlmb_v10_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/sim/design_1_ilmb_bram_if_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_ilmb_bram_if_cntlr_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_ilmb_v10_0/sim/design_1_ilmb_v10_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_ilmb_v10_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/sim/design_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity m00_couplers_imp_1CA5Z32
+INFO: [VRFC 10-307] analyzing entity m00_couplers_imp_8RVYHO
+INFO: [VRFC 10-307] analyzing entity m01_couplers_imp_1UTB3Y5
+INFO: [VRFC 10-307] analyzing entity m01_couplers_imp_I4GRPB
+INFO: [VRFC 10-307] analyzing entity m02_couplers_imp_7ANRHB
+INFO: [VRFC 10-307] analyzing entity m03_couplers_imp_1W07O72
+INFO: [VRFC 10-307] analyzing entity m04_couplers_imp_5LX7BU
+INFO: [VRFC 10-307] analyzing entity m05_couplers_imp_1XR4ZAZ
+INFO: [VRFC 10-307] analyzing entity m06_couplers_imp_4YOIXL
+INFO: [VRFC 10-307] analyzing entity microblaze_0_local_memory_imp_1K0VQXK
+INFO: [VRFC 10-307] analyzing entity s00_couplers_imp_1RZP34U
+INFO: [VRFC 10-307] analyzing entity s00_couplers_imp_O7FAN0
+INFO: [VRFC 10-307] analyzing entity design_1_axi_interconnect_0_0
+INFO: [VRFC 10-307] analyzing entity design_1_microblaze_0_axi_periph_0
+INFO: [VRFC 10-307] analyzing entity design_1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/config.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/common_pack.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/acknowledger_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity acknowledger_AXI
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/aggregator_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity aggregator_AXI
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/aggregator_AXIfull.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity aggregator_AXIfull
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/aggregator_MBTP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity aggregator_MBTP
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/bram_writer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity bram_writer
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/catcher.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity catcher
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/comp_prog.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity comp_prog
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/dcapf_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dcapf_AXI
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/dcapf_axifull.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dcapf_axifull
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/dcapf_branch_taken.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dcapf_branch_taken
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/dci.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dci
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/dispenser_dcapf.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dispenser_dcapf
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/eig_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity eig_AXI
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/eig_AXIfull.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity eig_AXIfull
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/eig_MBTP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity eig_MBTP
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/event_data_manager.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_data_manager
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/event_monitor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity event_monitor
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/filter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity filter
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/init_dcapf.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity init_dcapf
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/lmic1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lmic1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/mux2to1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux2to1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/pipo_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity pipo_reg
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/smart_counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity smart_counter
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/smart_demux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity smart_demux
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/sniffer_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sniffer_AXI
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/sniffer_AXIfull.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sniffer_AXIfull
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/sniffer_MBTP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sniffer_MBTP
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/time_monitor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity time_monitor
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/timing_capturer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity timing_capturer
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/a911/global_mon.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity global_mon
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_global_mon_0_0/sim/design_1_global_mon_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_global_mon_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.srcs/sim_1/imports/new/mb_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mb_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2017.4/bin/unwrapped/lnx64.o/xelab -wto 2d0932824623451892145fbe1243a482 --incr --debug typical --relax --mt 8 -L blk_mem_gen_v8_3_6 -L axi_bram_ctrl_v4_0_13 -L xil_defaultlib -L lib_pkg_v1_0_2 -L lib_srl_fifo_v1_0_2 -L fifo_generator_v13_2_1 -L lib_fifo_v1_0_10 -L lib_cdc_v1_0_2 -L axi_datamover_v5_1_17 -L axi_sg_v4_1_8 -L axi_cdma_v4_1_15 -L axi_lite_ipif_v3_0_4 -L interrupt_control_v3_1_4 -L axi_gpio_v2_0_17 -L axi_uartlite_v2_0_19 -L blk_mem_gen_v8_4_1 -L mdm_v3_2_12 -L microblaze_v10_0_5 -L caph -L proc_sys_reset_v5_0_12 -L xlconcat_v2_1_1 -L xlconstant_v1_1_3 -L lmb_bram_if_cntlr_v4_0_14 -L lmb_v10_v3_0_9 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_15 -L axi_data_fifo_v2_1_14 -L axi_crossbar_v2_1_16 -L axi_protocol_converter_v2_1_15 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot mb_tb_behav xil_defaultlib.mb_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port s01_axi_awid [/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_mm_accelerator_0_0/sim/design_1_mm_accelerator_0_0.v:264]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port s01_axi_awuser [/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_mm_accelerator_0_0/sim/design_1_mm_accelerator_0_0.v:274]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port s01_axi_wuser [/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_mm_accelerator_0_0/sim/design_1_mm_accelerator_0_0.v:280]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port s01_axi_arid [/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_mm_accelerator_0_0/sim/design_1_mm_accelerator_0_0.v:288]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port s01_axi_aruser [/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_mm_accelerator_0_0/sim/design_1_mm_accelerator_0_0.v:298]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 33 for port count_data [/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/mm_accelerator.v:225]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 33 for port count_full [/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/mm_accelerator.v:226]
+WARNING: [VRFC 10-278] actual bit length 10 differs from formal bit length 8 for port address_a [/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/mm_accelerator.v:312]
+WARNING: [VRFC 10-278] actual bit length 10 differs from formal bit length 8 for port address_a [/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/mm_accelerator.v:332]
+WARNING: [VRFC 10-278] actual bit length 10 differs from formal bit length 8 for port address_a [/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/mm_accelerator.v:352]
+WARNING: [VRFC 10-278] actual bit length 10 differs from formal bit length 8 for port address_a [/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.ip_user_files/bd/design_1/ipshared/2b48/mm_accelerator.srcs/sources_1/imports/hdl/mm_accelerator.v:372]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package unisim.vcomponents
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package xpm.vcomponents
+Compiling package axi_bram_ctrl_v4_0_13.axi_bram_ctrl_funcs
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_unsigned
+Compiling package lib_pkg_v1_0_2.lib_pkg
+Compiling package axi_cdma_v4_1_15.axi_cdma_pkg
+Compiling package axi_lite_ipif_v3_0_4.ipif_pkg
+Compiling package xil_defaultlib.config
+Compiling package xil_defaultlib.common_pack
+Compiling package mdm_v3_2_12.mdm_funcs
+Compiling package microblaze_v10_0_5.microblaze_types
+Compiling package microblaze_v10_0_5.microblaze_isa
+Compiling package microblaze_v10_0_5.mmu_types
+Compiling package lmb_bram_if_cntlr_v4_0_14.lmb_bram_if_funcs
+Compiling package caph.data_types
+Compiling package caph.core
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_13.sng_port_arb [\sng_port_arb(c_s_axi_addr_width...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_13.wrap_brst [\wrap_brst(c_axi_addr_width=13,c...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture muxcy_l_v of entity unisim.MUXCY_L [muxcy_l_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(0,15)\]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture imp of entity axi_bram_ctrl_v4_0_13.SRL_FIFO [\SRL_FIFO(c_data_bits=1,c_depth=...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_13.wr_chnl [\wr_chnl(c_axi_addr_width=13,c_a...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_13.rd_chnl [\rd_chnl(c_axi_addr_width=13,c_a...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_13.full_axi [\full_axi(c_s_axi_addr_width=13,...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_13.axi_bram_ctrl_top [\axi_bram_ctrl_top(c_bram_addr_w...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_0_13.axi_bram_ctrl [\axi_bram_ctrl(c_memory_depth=20...]
+Compiling architecture design_1_axi_bram_ctrl_0_0_arch of entity xil_defaultlib.design_1_axi_bram_ctrl_0_0 [design_1_axi_bram_ctrl_0_0_defau...]
+Compiling architecture design_1_axi_bram_ctrl_1_0_arch of entity xil_defaultlib.design_1_axi_bram_ctrl_1_0 [design_1_axi_bram_ctrl_1_0_defau...]
+Compiling architecture design_1_axi_bram_ctrl_2_0_arch of entity xil_defaultlib.design_1_axi_bram_ctrl_2_0 [design_1_axi_bram_ctrl_2_0_defau...]
+Compiling architecture implementation of entity axi_datamover_v5_1_17.axi_datamover_reset [axi_datamover_reset_default]
+Compiling architecture imp of entity axi_datamover_v5_1_17.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=8,c...]
+Compiling architecture imp of entity axi_datamover_v5_1_17.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=68,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_17.axi_datamover_cmd_status [\axi_datamover_cmd_status(c_stsc...]
+Compiling architecture implementation of entity axi_datamover_v5_1_17.axi_datamover_rd_status_cntl [axi_datamover_rd_status_cntl_def...]
+Compiling architecture implementation of entity axi_datamover_v5_1_17.axi_datamover_strb_gen2 [\axi_datamover_strb_gen2(c_strb_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_17.axi_datamover_strb_gen2 [\axi_datamover_strb_gen2(c_op_mo...]
+Compiling architecture implementation of entity axi_datamover_v5_1_17.axi_datamover_pcc [\axi_datamover_pcc(c_is_mm2s=1,c...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(c_size=3,...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=4,c_dwidth=5...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=59,c_de...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=59,c_depth=...]
+Compiling architecture imp of entity axi_datamover_v5_1_17.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=59,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_17.axi_datamover_addr_cntl [\axi_datamover_addr_cntl(c_famil...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=4,c_dwidth=2...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=29,c_de...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=29,c_depth=...]
+Compiling architecture imp of entity axi_datamover_v5_1_17.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=29,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_17.axi_datamover_rdmux [\axi_datamover_rdmux(c_sel_addr_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_17.axi_datamover_rddata_cntl [\axi_datamover_rddata_cntl(c_ali...]
+Compiling architecture implementation of entity axi_datamover_v5_1_17.axi_datamover_mm2s_full_wrap [\axi_datamover_mm2s_full_wrap(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_17.axi_datamover_pcc [\axi_datamover_pcc(c_dre_align_w...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=6,c_dwidth=7...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=7,c_dep...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=7,c_depth=6...]
+Compiling architecture imp of entity axi_datamover_v5_1_17.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=7,c...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(c_size=4,...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=6,c_dwidth=2...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=2,c_dep...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=2,c_depth=6...]
+Compiling architecture imp of entity axi_datamover_v5_1_17.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=2,c...]
+Compiling architecture implementation of entity axi_datamover_v5_1_17.axi_datamover_wr_status_cntl [\axi_datamover_wr_status_cntl(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_17.axi_datamover_addr_cntl [\axi_datamover_addr_cntl(c_addr_...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=4,c_dwidth=2...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=27,c_de...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=27,c_depth=...]
+Compiling architecture imp of entity axi_datamover_v5_1_17.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=27,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_17.axi_datamover_wrdata_cntl [\axi_datamover_wrdata_cntl(c_sf_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_17.axi_datamover_wr_demux [\axi_datamover_wr_demux(c_sel_ad...]
+Compiling architecture implementation of entity axi_datamover_v5_1_17.axi_datamover_skid2mm_buf [\axi_datamover_skid2mm_buf(c_add...]
+Compiling architecture implementation of entity axi_datamover_v5_1_17.axi_datamover_s2mm_full_wrap [\axi_datamover_s2mm_full_wrap(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_17.axi_datamover [\axi_datamover(c_include_mm2s=1,...]
+Compiling architecture implementation of entity axi_cdma_v4_1_15.axi_cdma_pulse_gen [\axi_cdma_pulse_gen(c_pulse_widt...]
+Compiling architecture implementation of entity axi_cdma_v4_1_15.axi_cdma_pulse_gen [\axi_cdma_pulse_gen(c_pos_edge_t...]
+Compiling architecture implementation of entity axi_cdma_v4_1_15.axi_cdma_pulse_gen [\axi_cdma_pulse_gen(c_pulse_widt...]
+Compiling architecture implementation of entity axi_cdma_v4_1_15.axi_cdma_reset [axi_cdma_reset_default]
+Compiling architecture implementation of entity axi_cdma_v4_1_15.axi_cdma_lite_if [\axi_cdma_lite_if(c_num_ce=16,c_...]
+Compiling architecture implementation of entity axi_cdma_v4_1_15.axi_cdma_register [\axi_cdma_register(c_num_registe...]
+Compiling architecture implementation of entity axi_cdma_v4_1_15.axi_cdma_reg_module [axi_cdma_reg_module_default]
+Compiling architecture implementation of entity axi_cdma_v4_1_15.axi_cdma_simple_cntlr [\axi_cdma_simple_cntlr(c_family=...]
+Compiling architecture implementation of entity axi_cdma_v4_1_15.axi_cdma_simple_wrap [\axi_cdma_simple_wrap(c_include_...]
+Compiling architecture implementation of entity axi_cdma_v4_1_15.axi_cdma [\axi_cdma(c_include_sf=0,c_dlytm...]
+Compiling architecture design_1_axi_cdma_0_0_arch of entity xil_defaultlib.design_1_axi_cdma_0_0 [design_1_axi_cdma_0_0_default]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.address_decoder [\address_decoder(c_bus_awidth=9,...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\slave_attachment(c_ard_addr_ran...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_addr_widt...]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_single_bit=0,c_vecto...]
+Compiling architecture imp of entity axi_gpio_v2_0_17.GPIO_Core [\GPIO_Core(c_aw=9,c_gpio_width=4...]
+Compiling architecture imp of entity axi_gpio_v2_0_17.axi_gpio [\axi_gpio(c_family="artix7",c_gp...]
+Compiling architecture design_1_axi_gpio_0_0_arch of entity xil_defaultlib.design_1_axi_gpio_0_0 [design_1_axi_gpio_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.m00_couplers_imp_1CA5Z32 [m00_couplers_imp_1ca5z32_default]
+Compiling architecture structure of entity xil_defaultlib.m01_couplers_imp_I4GRPB [m01_couplers_imp_i4grpb_default]
+Compiling architecture structure of entity xil_defaultlib.s00_couplers_imp_O7FAN0 [s00_couplers_imp_o7fan0_default]
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_carry_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module axi_crossbar_v2_1_16.axi_crossbar_v2_1_16_addr_decode...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module unisims_ver.SRLC32E_default_1
+Compiling module axi_data_fifo_v2_1_14.axi_data_fifo_v2_1_14_ndeep_srl(...
+Compiling module axi_data_fifo_v2_1_14.axi_data_fifo_v2_1_14_axic_srl_f...
+Compiling module axi_crossbar_v2_1_16.axi_crossbar_v2_1_16_si_transact...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_16.axi_crossbar_v2_1_16_si_transact...
+Compiling module axi_crossbar_v2_1_16.axi_crossbar_v2_1_16_splitter
+Compiling module unisims_ver.SRLC32E_default
+Compiling module axi_data_fifo_v2_1_14.axi_data_fifo_v2_1_14_ndeep_srl(...
+Compiling module axi_data_fifo_v2_1_14.axi_data_fifo_v2_1_14_axic_reg_s...
+Compiling module axi_crossbar_v2_1_16.axi_crossbar_v2_1_16_wdata_route...
+Compiling module axi_crossbar_v2_1_16.axi_crossbar_v2_1_16_wdata_mux(C...
+Compiling module axi_data_fifo_v2_1_14.axi_data_fifo_v2_1_14_axic_srl_f...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_register_slice_v2_1_15.axi_register_slice_v2_1_15_axic_...
+Compiling module axi_register_slice_v2_1_15.axi_register_slice_v2_1_15_axic_...
+Compiling module axi_register_slice_v2_1_15.axi_register_slice_v2_1_15_axic_...
+Compiling module axi_register_slice_v2_1_15.axi_register_slice_v2_1_15_axic_...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_15.axi_register_slice_v2_1_15_axi_r...
+Compiling module axi_crossbar_v2_1_16.axi_crossbar_v2_1_16_wdata_mux(C...
+Compiling module axi_data_fifo_v2_1_14.axi_data_fifo_v2_1_14_axic_srl_f...
+Compiling module axi_crossbar_v2_1_16.axi_crossbar_v2_1_16_addr_arbite...
+Compiling module axi_crossbar_v2_1_16.axi_crossbar_v2_1_16_decerr_slav...
+Compiling module axi_crossbar_v2_1_16.axi_crossbar_v2_1_16_crossbar(C_...
+Compiling module axi_crossbar_v2_1_16.axi_crossbar_v2_1_16_axi_crossba...
+Compiling module xil_defaultlib.design_1_xbar_0
+Compiling architecture structure of entity xil_defaultlib.design_1_axi_interconnect_0_0 [design_1_axi_interconnect_0_0_de...]
+Compiling architecture rtl of entity axi_uartlite_v2_0_19.baudrate [\baudrate(c_ratio=54)\]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_mtbf_stages=4)\]
+Compiling architecture behavioral of entity axi_uartlite_v2_0_19.dynshreg_i_f [\dynshreg_i_f(c_depth=16,c_famil...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(c_size=5,...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=16,c_dwidth=...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=8,c_fam...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=8,c_family=...]
+Compiling architecture rtl of entity axi_uartlite_v2_0_19.uartlite_rx [\uartlite_rx(c_family="artix7")(...]
+Compiling architecture behavioral of entity axi_uartlite_v2_0_19.dynshreg_i_f [\dynshreg_i_f(c_depth=16,c_init_...]
+Compiling architecture rtl of entity axi_uartlite_v2_0_19.uartlite_tx [\uartlite_tx(c_family="artix7")(...]
+Compiling architecture rtl of entity axi_uartlite_v2_0_19.uartlite_core [\uartlite_core(c_family="artix7"...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.address_decoder [\address_decoder(c_bus_awidth=4,...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\slave_attachment(c_ard_addr_ran...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_addr_widt...]
+Compiling architecture rtl of entity axi_uartlite_v2_0_19.axi_uartlite [\axi_uartlite(c_family="artix7",...]
+Compiling architecture design_1_axi_uartlite_0_0_arch of entity xil_defaultlib.design_1_axi_uartlite_0_0 [design_1_axi_uartlite_0_0_defaul...]
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_0_0
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.design_1_blk_mem_gen_1_0
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0
+Compiling architecture behavioral of entity xil_defaultlib.smart_counter [\smart_counter(dim_bit_g=14,incr...]
+Compiling architecture behavioral of entity xil_defaultlib.bram_writer [bram_writer_default]
+Compiling architecture arch_imp of entity xil_defaultlib.dci [dci_default]
+Compiling architecture behavioral of entity xil_defaultlib.eig_AXI [\eig_AXI(dim_event_g=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.smart_demux [smart_demux_default]
+Compiling architecture behavioral of entity xil_defaultlib.smart_counter [\smart_counter(dim_bit_g=1,incre...]
+Compiling architecture behavioral of entity xil_defaultlib.dispenser_dcapf [dispenser_dcapf_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux2to1 [mux2to1_default]
+Compiling architecture behavioral of entity xil_defaultlib.event_data_manager [event_data_manager_default]
+Compiling architecture arc_comp_lt of entity xil_defaultlib.comp_prog [comp_prog_default]
+Compiling architecture behavioral of entity xil_defaultlib.filter [filter_default]
+Compiling architecture behavioral of entity xil_defaultlib.catcher [catcher_default]
+Compiling architecture behavioral of entity xil_defaultlib.pipo_reg [pipo_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.acknowledger_AXI [\acknowledger_AXI(ack_input_size...]
+Compiling architecture behavioral of entity xil_defaultlib.smart_counter [\smart_counter(increment_size_g=...]
+Compiling architecture behavioral of entity xil_defaultlib.time_monitor [\time_monitor(config_string="011...]
+Compiling architecture behavioral of entity xil_defaultlib.pipo_reg [\pipo_reg(size_g=32)\]
+Compiling architecture behavioral of entity xil_defaultlib.init_dcapf [init_dcapf_default]
+Compiling architecture behavioral of entity xil_defaultlib.dcapf_AXI [\dcapf_AXI(config_string="01011"...]
+Compiling architecture behavioral of entity xil_defaultlib.aggregator_AXI [aggregator_axi_default]
+Compiling architecture behavioral of entity xil_defaultlib.sniffer_AXI [\sniffer_AXI(dim_event_g=32)\]
+Compiling architecture arc_comp_lt of entity xil_defaultlib.comp_prog [\comp_prog(dim_bus_g=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.eig_AXIfull [eig_axifull_default]
+Compiling architecture behavioral of entity xil_defaultlib.smart_counter [\smart_counter(dim_bit_g=32,incr...]
+Compiling architecture behavioral of entity xil_defaultlib.event_monitor [\event_monitor(incr_size_g=32,di...]
+Compiling architecture behavioral of entity xil_defaultlib.dcapf_axifull [\dcapf_axifull(incr_size_g=32,co...]
+Compiling architecture behavioral of entity xil_defaultlib.aggregator_AXIfull [aggregator_axifull_default]
+Compiling architecture behavioral of entity xil_defaultlib.sniffer_AXIfull [sniffer_axifull_default]
+Compiling architecture behavioral of entity xil_defaultlib.lmic1 [lmic1_default]
+Compiling architecture arch_imp of entity xil_defaultlib.global_mon [\global_mon(c_s00_axi_data_width...]
+Compiling architecture design_1_global_mon_0_0_arch of entity xil_defaultlib.design_1_global_mon_0_0 [design_1_global_mon_0_0_default]
+Compiling architecture bscane2_v of entity unisim.BSCANE2 [\BSCANE2(jtag_chain=2)(1,5)\]
+Compiling architecture imp of entity mdm_v3_2_12.MB_BSCANE2 [\MB_BSCANE2(c_target=non_rtl,jta...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture imp of entity mdm_v3_2_12.MB_BUFG [\MB_BUFG(c_target=non_rtl)\]
+Compiling architecture fdce_v of entity unisim.FDCE [fdce_default]
+Compiling architecture fdc_1_v of entity unisim.FDC_1 [fdc_1_default]
+Compiling architecture imp of entity mdm_v3_2_12.MB_FDC_1 [\MB_FDC_1(c_target=non_rtl)\]
+Compiling architecture fdre_1_v of entity unisim.FDRE_1 [fdre_1_default]
+Compiling architecture imp of entity mdm_v3_2_12.MB_FDRE_1 [\MB_FDRE_1(c_target=non_rtl)\]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0000000101100111")...]
+Compiling architecture imp of entity mdm_v3_2_12.MB_SRL16E [\MB_SRL16E(c_target=non_rtl,c_st...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0100001010000111")...]
+Compiling architecture imp of entity mdm_v3_2_12.MB_SRL16E [\MB_SRL16E(c_target=non_rtl,c_st...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0100010001000011")...]
+Compiling architecture imp of entity mdm_v3_2_12.MB_SRL16E [\MB_SRL16E(c_target=non_rtl,c_st...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0101100001001101")...]
+Compiling architecture imp of entity mdm_v3_2_12.MB_SRL16E [\MB_SRL16E(c_target=non_rtl,c_st...]
+Compiling architecture imp of entity mdm_v3_2_12.JTAG_CONTROL [\JTAG_CONTROL(c_target=non_rtl,c...]
+Compiling architecture imp of entity mdm_v3_2_12.MDM_Core [\MDM_Core(c_target=non_rtl,c_jta...]
+Compiling architecture imp of entity mdm_v3_2_12.MDM [\MDM(c_family="artix7",c_bscanid...]
+Compiling architecture design_1_mdm_1_0_arch of entity xil_defaultlib.design_1_mdm_1_0 [design_1_mdm_1_0_default]
+Compiling architecture imp of entity microblaze_v10_0_5.DAXI_interface [\DAXI_interface(c_data_size=32,c...]
+Compiling architecture and2b1l_v of entity unisim.AND2B1L [and2b1l_default]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_AND2B1L [\MB_AND2B1L(c_target=artix7)\]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_SRL16E [\MB_SRL16E(c_target=artix7,c_use...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0011111111111111")...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_SRL16E [\MB_SRL16E(c_target=artix7,c_use...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0000000000011011")...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_SRL16E [\MB_SRL16E(c_target=artix7,c_use...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(15,0)\]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_SRL16E [\MB_SRL16E(c_target=artix7,c_use...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0000000001100100")...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_SRL16E [\MB_SRL16E(c_target=artix7,c_use...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="0010010000000000")...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_SRL16E [\MB_SRL16E(c_target=artix7,c_use...]
+Compiling architecture imp of entity microblaze_v10_0_5.mb_sync_bit [\mb_sync_bit(c_levels=1,c_reset_...]
+Compiling architecture imp of entity microblaze_v10_0_5.mb_sync_vec [\mb_sync_vec(c_levels=1,c_reset_...]
+Compiling architecture imp of entity microblaze_v10_0_5.mb_sync_bit [\mb_sync_bit(c_levels=1)\]
+Compiling architecture imp of entity microblaze_v10_0_5.mb_sync_vec [\mb_sync_vec(c_width=10)\]
+Compiling architecture srlc16e_v of entity unisim.SRLC16E [\SRLC16E(0,15)\]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_SRLC16E [\MB_SRLC16E(c_target=artix7,c_us...]
+Compiling architecture imp of entity microblaze_v10_0_5.address_hit [\address_hit(c_target=artix7,c_f...]
+Compiling architecture imp of entity microblaze_v10_0_5.Debug [\Debug(c_data_size=32,c_instr_si...]
+Compiling architecture imp of entity microblaze_v10_0_5.interrupt_mode_converter [\interrupt_mode_converter(c_edge...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010000000010010000...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_LUT6 [\MB_LUT6(c_target=artix7,init="1...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010000000010010000...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_LUT6 [\MB_LUT6(c_target=artix7,init="1...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_FDRE [\MB_FDRE(c_target=artix7)\]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_MUXCY_XORCY [\MB_MUXCY_XORCY(c_target=artix7)...]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_MUXF7 [\MB_MUXF7(c_target=artix7)\]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_FDR [\MB_FDR(c_target=artix7)\]
+Compiling architecture imp of entity microblaze_v10_0_5.PC_Module_gti [\PC_Module_gti(c_data_size=32,c_...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_LUT6 [\MB_LUT6(c_target=artix7,init="0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000001111...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_LUT6 [\MB_LUT6(c_target=artix7,init="0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111000000001111...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_LUT6 [\MB_LUT6(c_target=artix7,init="1...]
+Compiling architecture fdse_v of entity unisim.FDSE [fdse_default]
+Compiling architecture fds_v of entity unisim.FDS [fds_default]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_FDS [\MB_FDS(c_target=artix7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000111111110000...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_LUT6 [\MB_LUT6(c_target=artix7,init="0...]
+Compiling architecture imp of entity microblaze_v10_0_5.PreFetch_Buffer_gti [\PreFetch_Buffer_gti(c_data_size...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_MUXCY [\MB_MUXCY(c_target=artix7)\]
+Compiling architecture imp of entity microblaze_v10_0_5.carry_and [\carry_and(c_target=artix7)\]
+Compiling architecture imp of entity microblaze_v10_0_5.jump_logic [\jump_logic(c_instr_size=32,c_ta...]
+Compiling architecture imp of entity microblaze_v10_0_5.carry_or [\carry_or(c_target=artix7)\]
+Compiling architecture imp of entity microblaze_v10_0_5.Decode_gti [\Decode_gti(c_data_size=32,c_ins...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="000000001111111100...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_LUT6_2 [\MB_LUT6_2(c_target=artix7,init=...]
+Compiling architecture ram32m_v of entity unisim.RAM32M [ram32m_default]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_RAM32M [\MB_RAM32M(c_target=artix7,c_use...]
+Compiling architecture imp of entity microblaze_v10_0_5.Register_File_gti [\Register_File_gti(c_data_size=3...]
+Compiling architecture imp of entity microblaze_v10_0_5.Operand_Select_gti [\Operand_Select_gti(c_data_size=...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="011000000111101010...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_LUT6_2 [\MB_LUT6_2(c_target=artix7,init=...]
+Compiling architecture imp of entity microblaze_v10_0_5.ALU_Bit [\ALU_Bit(c_target=artix7,c_allow...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01100000011110101010...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_LUT6 [\MB_LUT6(c_target=artix7,init="0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111101000001010")(0...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_LUT4 [\MB_LUT4(c_target=artix7,init="1...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture mult_and_v of entity unisim.MULT_AND [mult_and_default]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_MULT_AND [\MB_MULT_AND(c_target=artix7)\]
+Compiling architecture imp of entity microblaze_v10_0_5.ALU_Bit [\ALU_Bit(c_target=artix7,c_allow...]
+Compiling architecture imp of entity microblaze_v10_0_5.ALU [\ALU(c_data_size=32,c_allow_lut6...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_LUT6 [\MB_LUT6(c_target=rtl,init="1100...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_LUT6 [\MB_LUT6(c_target=rtl,init="1100...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_LUT6 [\MB_LUT6(c_target=rtl,init="1100...]
+Compiling architecture imp of entity microblaze_v10_0_5.Shift_Logic_Module_gti [\Shift_Logic_Module_gti(c_data_s...]
+Compiling architecture imp of entity microblaze_v10_0_5.mul_unit [\mul_unit(c_data_size=32,c_targe...]
+Compiling architecture imp of entity microblaze_v10_0_5.Barrel_Shifter_gti [\Barrel_Shifter_gti(c_data_size=...]
+Compiling architecture imp of entity microblaze_v10_0_5.WB_Mux_Bit [\WB_Mux_Bit(c_target=artix7,c_lu...]
+Compiling architecture imp of entity microblaze_v10_0_5.WB_Mux [\WB_Mux(c_data_size=32,c_daddr_s...]
+Compiling architecture imp of entity microblaze_v10_0_5.Zero_Detect_gti [\Zero_Detect_gti(c_data_size=32,...]
+Compiling architecture imp of entity microblaze_v10_0_5.Byte_Doublet_Handle_gti [\Byte_Doublet_Handle_gti(c_data_...]
+Compiling architecture imp of entity microblaze_v10_0_5.Data_Flow_Logic [\Data_Flow_Logic(c_data_size=32,...]
+Compiling architecture msr_reg of entity microblaze_v10_0_5.msr_reg_gti [\msr_reg_gti(c_data_size=32,c_ta...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="111111110000000011...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_LUT6_2 [\MB_LUT6_2(c_target=artix7,init=...]
+Compiling architecture imp of entity microblaze_v10_0_5.mux_bus [\mux_bus(c_target=artix7,c_allow...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2(init="100101101001011010...]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_LUT6_2 [\MB_LUT6_2(c_target=artix7,init=...]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture imp of entity microblaze_v10_0_5.MB_FDE [\MB_FDE(c_target=artix7)\]
+Compiling architecture imp of entity microblaze_v10_0_5.exception_registers_gti [\exception_registers_gti(c_data_...]
+Compiling architecture imp of entity microblaze_v10_0_5.Fpu [\Fpu(c_data_size=32,c_target=art...]
+Compiling architecture imp of entity microblaze_v10_0_5.PVR [\PVR(c_data_size=32,c_daddr_size...]
+Compiling architecture imp of entity microblaze_v10_0_5.Data_Flow_gti [\Data_Flow_gti(c_data_size=32,c_...]
+Compiling architecture imp of entity microblaze_v10_0_5.read_data_mux [\read_data_mux(c_data_size=32,c_...]
+Compiling architecture imp of entity microblaze_v10_0_5.instr_mux [\instr_mux(c_instr_size=32,c_tar...]
+Compiling architecture imp of entity microblaze_v10_0_5.MMU [\MMU(c_data_size=32,c_daddr_size...]
+Compiling architecture imp of entity microblaze_v10_0_5.MicroBlaze_GTi [\MicroBlaze_GTi(c_num_sync_ff_cl...]
+Compiling architecture imp of entity microblaze_v10_0_5.mb_sync_bit [mb_sync_bit_default]
+Compiling architecture imp of entity microblaze_v10_0_5.MicroBlaze_Core [\MicroBlaze_Core(c_freq=10000000...]
+Compiling architecture imp of entity microblaze_v10_0_5.MicroBlaze [\MicroBlaze(c_freq=100000000,c_e...]
+Compiling architecture design_1_microblaze_0_0_arch of entity xil_defaultlib.design_1_microblaze_0_0 [design_1_microblaze_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.m00_couplers_imp_8RVYHO [m00_couplers_imp_8rvyho_default]
+Compiling architecture structure of entity xil_defaultlib.m01_couplers_imp_1UTB3Y5 [m01_couplers_imp_1utb3y5_default]
+Compiling architecture structure of entity xil_defaultlib.m02_couplers_imp_7ANRHB [m02_couplers_imp_7anrhb_default]
+Compiling module axi_protocol_converter_v2_1_15.axi_protocol_converter_v2_1_15_a...
+Compiling module xil_defaultlib.design_1_auto_pc_0
+Compiling architecture structure of entity xil_defaultlib.m03_couplers_imp_1W07O72 [m03_couplers_imp_1w07o72_default]
+Compiling architecture structure of entity xil_defaultlib.m04_couplers_imp_5LX7BU [m04_couplers_imp_5lx7bu_default]
+Compiling architecture structure of entity xil_defaultlib.m05_couplers_imp_1XR4ZAZ [m05_couplers_imp_1xr4zaz_default]
+Compiling module xil_defaultlib.design_1_auto_pc_1
+Compiling architecture structure of entity xil_defaultlib.m06_couplers_imp_4YOIXL [m06_couplers_imp_4yoixl_default]
+Compiling architecture structure of entity xil_defaultlib.s00_couplers_imp_1RZP34U [s00_couplers_imp_1rzp34u_default]
+Compiling module axi_crossbar_v2_1_16.axi_crossbar_v2_1_16_addr_arbite...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module axi_crossbar_v2_1_16.axi_crossbar_v2_1_16_addr_decode...
+Compiling module axi_crossbar_v2_1_16.axi_crossbar_v2_1_16_splitter(C_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_register_slice_v2_1_15.axi_register_slice_v2_1_15_axic_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_16.axi_crossbar_v2_1_16_decerr_slav...
+Compiling module axi_crossbar_v2_1_16.axi_crossbar_v2_1_16_crossbar_sa...
+Compiling module axi_crossbar_v2_1_16.axi_crossbar_v2_1_16_axi_crossba...
+Compiling module xil_defaultlib.design_1_xbar_1
+Compiling architecture structure of entity xil_defaultlib.design_1_microblaze_0_axi_periph_0 [design_1_microblaze_0_axi_periph...]
+Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_14.pselect_mask [\pselect_mask(c_bar="00000000000...]
+Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_14.lmb_mux [\lmb_mux(c_target=artix7,c_basea...]
+Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_14.lmb_bram_if_cntlr [\lmb_bram_if_cntlr(c_family="art...]
+Compiling architecture design_1_dlmb_bram_if_cntlr_0_arch of entity xil_defaultlib.design_1_dlmb_bram_if_cntlr_0 [design_1_dlmb_bram_if_cntlr_0_de...]
+Compiling architecture imp of entity lmb_v10_v3_0_9.lmb_v10 [\lmb_v10(c_lmb_num_slaves=1)\]
+Compiling architecture design_1_dlmb_v10_0_arch of entity xil_defaultlib.design_1_dlmb_v10_0 [design_1_dlmb_v10_0_default]
+Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_14.pselect_mask [\pselect_mask(c_bar="00000000000...]
+Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_14.lmb_mux [\lmb_mux(c_target=artix7,c_basea...]
+Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_14.lmb_bram_if_cntlr [\lmb_bram_if_cntlr(c_family="art...]
+Compiling architecture design_1_ilmb_bram_if_cntlr_0_arch of entity xil_defaultlib.design_1_ilmb_bram_if_cntlr_0 [design_1_ilmb_bram_if_cntlr_0_de...]
+Compiling architecture design_1_ilmb_v10_0_arch of entity xil_defaultlib.design_1_ilmb_v10_0 [design_1_ilmb_v10_0_default]
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.design_1_lmb_bram_0
+Compiling architecture structure of entity xil_defaultlib.microblaze_0_local_memory_imp_1K0VQXK [microblaze_0_local_memory_imp_1k...]
+Compiling module xil_defaultlib.config_registers_default
+Compiling module xil_defaultlib.S01_AXI_ipif(C_S_AXI_ID_WIDTH=0,...
+Compiling module xil_defaultlib.local_memory
+Compiling module xil_defaultlib.front_end
+Compiling module xil_defaultlib.counter(SIZE=8)
+Compiling module xil_defaultlib.configurator
+Compiling architecture rtl of entity caph.sync_ram [\sync_ram(depth=64,size=32)\]
+Compiling architecture archi of entity caph.fifo_big [\fifo_big(depth=64,size=32)\]
+Compiling architecture fsm of entity xil_defaultlib.forward [forward_default]
+Compiling architecture fsm of entity xil_defaultlib.splitter [splitter_default]
+Compiling architecture fsm of entity xil_defaultlib.mac_8 [mac_8_default]
+Compiling architecture rtl of entity caph.sync_ram [\sync_ram(depth=64,size=64)\]
+Compiling architecture archi of entity caph.fifo_big [\fifo_big(depth=64,size=64)\]
+Compiling architecture fsm of entity xil_defaultlib.adder [adder_default]
+Compiling architecture fsm of entity xil_defaultlib.mac_16 [mac_16_default]
+Compiling architecture rtl of entity caph.sync_ram [\sync_ram(depth=2,size=32)\]
+Compiling architecture archi of entity caph.fifo_big [\fifo_big(depth=2,size=32)\]
+Compiling module xil_defaultlib.sbox1x2
+Compiling module xil_defaultlib.sbox2x1
+Compiling module xil_defaultlib.sbox1x2(SIZE=64)
+Compiling module xil_defaultlib.sbox2x1(SIZE=64)
+Compiling module xil_defaultlib.multi_dataflow
+Compiling module xil_defaultlib.back_end
+Compiling module xil_defaultlib.mm_accelerator(C_S01_AXI_ID_WIDT...
+Compiling module xil_defaultlib.design_1_mm_accelerator_0_0
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_12.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_12.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_12.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_12.proc_sys_reset [\proc_sys_reset(c_family="artix7...]
+Compiling architecture design_1_rst_clk_wiz_0_100m_0_arch of entity xil_defaultlib.design_1_rst_clk_wiz_0_100M_0 [design_1_rst_clk_wiz_0_100m_0_de...]
+Compiling module xlconcat_v2_1_1.xlconcat_v2_1_1_xlconcat(IN0_WID...
+Compiling module xil_defaultlib.design_1_xlconcat_1_0
+Compiling module xlconstant_v1_1_3.xlconstant_v1_1_3_xlconstant(CON...
+Compiling module xil_defaultlib.design_1_xlconstant_1_0
+Compiling architecture structure of entity xil_defaultlib.design_1 [design_1_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_wrapper [design_1_wrapper_default]
+Compiling architecture structure of entity xil_defaultlib.mb_tb
+Built simulation snapshot mb_tb_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/mb_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Mar 15 18:46:42 2021...
+run_program: Time (s): cpu = 00:00:41 ; elapsed = 00:00:31 . Memory (MB): peak = 6546.637 ; gain = 0.000 ; free physical = 11085 ; free virtual = 14313
+INFO: [USF-XSim-69] 'elaborate' step finished in '31' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mb_tb_behav -key {Behavioral:sim_1:Functional:mb_tb} -tclbatch {mb_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source mb_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Block Memory Generator module mb_tb.dut.design_1_i.blk_mem_gen_0.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module mb_tb.dut.design_1_i.microblaze_0_local_memory.lmb_bram.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+blk_mem_gen_v8_4_1 collision detected at time: 227500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 232500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 237500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 242500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 247500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 252500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 257500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 262500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 267500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+Warning: [Unisim MMCME2_ADV-20] Input CLKIN1 period and attribute CLKIN1_PERIOD are not same. Instance mb_tb.dut.design_1_i.clk_wiz_0.inst.mmcm_adv_inst 
+blk_mem_gen_v8_4_1 collision detected at time: 272500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 277500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 282500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 287500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 292500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 297500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 302500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 307500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 312500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 317500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 322500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 327500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 332500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 337500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 342500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 347500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 352500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 357500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 362500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 367500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 372500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 377500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 382500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 387500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 392500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 397500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 402500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 407500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 412500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 417500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 422500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 427500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 432500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 437500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 442500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 447500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 452500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 457500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 462500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 467500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 472500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 477500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 482500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 487500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 492500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 497500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 502500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 507500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 512500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 517500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 522500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 527500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 532500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 537500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 542500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 547500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 552500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 557500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 562500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 567500, Instance: mb_tb.dut.design_1_i.blk_mem_gen_1.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B  read address: 0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mb_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:52 ; elapsed = 00:00:42 . Memory (MB): peak = 6615.316 ; gain = 68.680 ; free physical = 11036 ; free virtual = 14276
+run 30 us
+run: Time (s): cpu = 00:00:00.77 ; elapsed = 00:00:05 . Memory (MB): peak = 6615.316 ; gain = 0.000 ; free physical = 11038 ; free virtual = 14279
+save_wave_config {/home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/mb_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/mb_tb_behav.wcfg
+set_property xsim.view /home/sohrabi/Desktop/monitor_for_accelerators/monitor_accelerator/further_modification/clean_test2/mb/project_1/mb_tb_behav.wcfg [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 15 18:47:17 2021...
