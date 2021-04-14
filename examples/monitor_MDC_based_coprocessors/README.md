@@ -73,6 +73,11 @@ Follows the steps below to reproduce the example and use the monitor for coproce
 7. at this point, you will get a Vivado project with a block design where the ARM processor shares an external DRAM with the MDC-based multiplier;
 8. close the Vivado project and move with a shell inside *examples/monitor_MDC_based_coprocessors/jointer_MDC*;
 9. execute the Python script (named script.py) inside that folder. This will open the window to customize the monitor to be introduced within the project. Be aware to select the Custom Multiplications example. At the end, press Generate;
+	* the transaction level sniffer allows to monitor the AXI4-Full bus used to transfer data from external memory to accelerator. In particular, it allows to count the number of written bytes toward the accelerator.
+	* the task level sniffer allows to monitor the accelerator internal parts managing the execution of the HW-task. In particular, it allows to monitor the time between the start and the end of the HW-task execution;
+	* the operation level sniffer allows to monitor the data-cruncher part of the accelerator, where computation associated to the HW-task is actually performed. The sniffer level can be further customized:
+		* the first field allows to customize ...
+		* the second field ...
 10. a Vivado project containing the coprocessor connected to the dual-core ARM Cortex A9, together with the monitoring system, will be opened;
 11. The final folder structure in *examples/monitor_MDC_based_coprocessors/jointer_MDC* highlights the presence of a project_monitored inside, that contains the new generated project;
 12. generate the bitstream and exports the hardware to Xilinx Vitis or XSDK (depending on the Vivado version installed on your PC);
